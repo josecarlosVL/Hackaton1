@@ -1,0 +1,17 @@
+:root{ /*Identidad visual*/
+--color1-blanco: #FFFFFF;
+--color2-vobscuro: #184031;
+--color3-vpasto: #5A7302;
+--color4-vclaro: #C5F280;
+}
+
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'Oswald',sans-serif;
+  font-size: xx-large;
+  color: var(--color3-vclaro);
+}

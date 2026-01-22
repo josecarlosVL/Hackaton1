@@ -24,98 +24,101 @@
     <!-- Navbar -->
 <div id="contenedor-navbar" class="sticky-top"></div> <!-- Aquí va el navbar -->
 <!-- Hero -->
-
 <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+  <!-- Indicadores -->
   <div class="carousel-indicators">
     <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"></button>
     <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1"></button>
     <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2"></button>
   </div>
-  <div class="carousel-inner">
-    <div class="carousel-item active hero-slide hero-slide-1">
-      <div class="hero-overlay">
-        <div class="container">
-          <h1 class="display-3 fw-bold mb-4">Todo para tu deporte</h1>
-          <p class="lead mb-5">Encuentra tenis, ropa y accesorios para máximo rendimiento</p>
-          <a href="#productos" class="btn btn-primary btn-lg">Ver colecciones</a>
-        </div>
-      </div>
-    </div>
 
-  <!-- Slides -->
-  <div class="carousel-inner">
-    <!-- Slide 1 -->
-    <div class="carousel-item active" style="
-      height: 75vh; background: linear-gradient(rgba(24,64,49,0.85), rgba(90,115,2,0.7)), 
-      url('https://images.unsplash.com/photo-1517649763962-0c623066013b?w=1400&fit=crop&q=80&auto=format') center/cover;
-    ">
-      <div class="d-flex h-100 align-items-center justify-content-start p-5">
-        <div class="container">
-          <div class="row justify-content-start">
-            <div class="col-lg-8">
-              <h1 class="display-3 fw-bold text-white mb-4 shadow-lg" style="text-shadow: 0 4px 12px rgba(0,0,0,0.7);">Todo para tu deporte</h1>
-              <p class="lead fs-4 text-white mb-5 shadow-sm" style="text-shadow: 0 2px 8px rgba(0,0,0,0.5);">Tenis, ropa y accesorios para máximo rendimiento</p>
-              <a href="#productos" class="btn btn-lg px-5 py-3 fw-bold rounded-pill shadow-lg" style="
-                background: #fff; color: #184031; border: 2px solid #fff; text-transform: uppercase; letter-spacing: 1px;
-              ">Ver colecciones</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Slide 2 -->
-    <div class="carousel-item" style="
-      height: 75vh; background: linear-gradient(rgba(24,64,49,0.8), rgba(90,115,2,0.6)), 
-      url('https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=1400&fit=crop&q=80&auto=format') center/cover;
-    ">
-      <div class="d-flex h-100 align-items-center justify-content-start p-5">
-        <div class="container">
-          <div class="row justify-content-start">
-            <div class="col-lg-8">
-              <h1 class="display-3 fw-bold text-white mb-4 shadow-lg" style="text-shadow: 0 4px 12px rgba(0,0,0,0.7);">Ofertas running</h1>
-              <p class="lead fs-4 text-white mb-5 shadow-sm" style="text-shadow: 0 2px 8px rgba(0,0,0,0.5);">Descuentos en calzado profesional</p>
-              <a href="#productos" class="btn btn-outline-light btn-lg px-5 py-3 fw-bold rounded-pill shadow-lg" style="
-                border: 2px solid #fff; text-transform: uppercase; letter-spacing: 1px;
-              ">Comprar ahora</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Slide 3 -->
-    <div class="carousel-item" style="
-      height: 75vh; backgrond: linear-gradient(rgba(24,64,49,0.85), rgba(90,115,2,0.7)), 
-      url('https://images.unsplash.com/photo-1606890658317-7d4e69c942d3?w=1400&fit=crop&q=80&auto=format') center/cover;
-    ">
-      <div class="d-flex h-100 align-items-center justify-content-start p-5">
-        <div class="container">
-          <div class="row justify-content-start">
-            <div class="col-lg-8">
-              <h1 class="display-3 fw-bold text-white mb-4 shadow-lg" style="text-shadow: 0 4px 12px rgba(0,0,0,0.7);">Equipos completos</h1>
-              <p class="lead fs-4 text-white mb-5 shadow-sm" style="text-shadow: 0 2px 8px rgba(0,0,0,0.5);">Fútbol, básquet, voley y más</p>
-              <a href="#productos" class="btn btn-lg px-5 py-3 fw-bold rounded-pill shadow-lg" style="
-                background: #fff; color: #184031; border: 2px solid #fff; text-transform: uppercase; letter-spacing: 1px;
-              ">Ver equipos</a>
+<!-- Hero Estático -->
+<section class="hero-static">
+  <div class="hero-background">
+    <div class="hero-overlay-content">
+      <div class="container">
+        <div class="row align-items-center" style="min-height: 70vh;">
+          <div class="col-lg-6">
+            <span class="hero-badge">Nueva Colección 2026</span>
+            <h1 class="hero-main-title">Alcanza tu máximo rendimiento</h1>
+            <p class="hero-main-text">
+              Equipamiento profesional para corredores, atletas y entusiastas del deporte. 
+              Calidad premium al mejor precio.
+            </p>
+            <div class="hero-cta-buttons">
+              <a href="#productos" class="btn-hero-primary">Explorar productos</a>
+              <a href="#productos" class="btn-hero-secondary">Ver ofertas</a>
             </div>
           </div>
         </div>
       </div>
     </div>
   </div>
+</section>
 
-  <!-- Controles -->
-  <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Anterior</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Siguiente</span>
-  </button>
-</div>
-<!-- Fin Hero -->
+<!-- Grid de Categorías -->
+<section class="categories-grid py-5">
+  <div class="container">
+    <div class="row g-4">
+      
+      <!-- Categoría 1: Running -->
+      <div class="col-md-6 col-lg-3">
+        <div class="category-card">
+          <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=400&h=500&fit=crop&q=80" 
+               alt="Running" class="category-image">
+          <div class="category-overlay">
+            <h3 class="category-title">Running</h3>
+            <p class="category-subtitle">Desde $1,899</p>
+            <a href="#productos" class="category-link">Ver más →</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Categoría 2: Fútbol -->
+      <div class="col-md-6 col-lg-3">
+        <div class="category-card">
+          <img src="https://images.unsplash.com/photo-1511886929837-354d827aae26?w=400&h=500&fit=crop&q=80" 
+               alt="Fútbol" class="category-image">
+          <div class="category-overlay">
+            <h3 class="category-title">Fútbol</h3>
+            <p class="category-subtitle">Desde $2,299</p>
+            <a href="#productos" class="category-link">Ver más →</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Categoría 3: Baloncesto -->
+      <div class="col-md-6 col-lg-3">
+        <div class="category-card">
+          <img src="https://images.unsplash.com/photo-1549298916-b41d501d3772?w=400&h=500&fit=crop&q=80" 
+               alt="Baloncesto" class="category-image">
+          <div class="category-overlay">
+            <h3 class="category-title">Baloncesto</h3>
+            <p class="category-subtitle">Desde $2,499</p>
+            <a href="#productos" class="category-link">Ver más →</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Categoría 4: Outdoor -->
+      <div class="col-md-6 col-lg-3">
+        <div class="category-card">
+          <img src="https://images.unsplash.com/photo-1460353581641-37baddab0fa2?w=400&h=500&fit=crop&q=80" 
+               alt="Outdoor" class="category-image">
+          <div class="category-overlay">
+            <h3 class="category-title">Outdoor</h3>
+            <p class="category-subtitle">Desde $3,199</p>
+            <a href="#productos" class="category-link">Ver más →</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+<!-- Fin Hero y Categorías -->
+
+
 
 <!-- Productos destacados -->
 <section class="featured-products py-5" id="productos">
@@ -298,7 +301,7 @@
           <div class="carousel-inner">
             <div class="carousel-item active">
               <div class="card">
-                <div class="img-wrapper"><img src="/images/9.webp" class="d-block w-100" alt="..."> </div>
+                <div class="img-wrapper"><img src="https://eagle-elite.vamtam.com/wp-content/uploads/2024/10/GettyImages-1804174559.jpeg" class="d-block w-100" alt="..."> </div>
                 <div class="card-body">
                   <h5 class="card-title">Entrenador y futuros campeones</h5>
                   <i class="bi bi-star-fill text-warning pe-1"></i>
@@ -312,7 +315,7 @@
             </div>
             <div class="carousel-item">
               <div class="card">
-                <div class="img-wrapper"><img src="/images/1.webp" class="d-block w-100" alt="..."> </div>
+                <div class="img-wrapper"><img src="https://eagle-elite.vamtam.com/wp-content/uploads/2024/12/gettyimages-1191922293-2048x2048-2.jpg" class="d-block w-100" alt="..."> </div>
                 <div class="card-body">
                   <h5 class="card-title">Calidad que se Nota</h5>
                   <i class="bi bi-star-fill text-warning pe-1"></i>
@@ -326,7 +329,7 @@
             </div>
             <div class="carousel-item">
               <div class="card">
-                <div class="img-wrapper"><img src="/images/1.webp" class="d-block w-100" alt="..."> </div>
+                <div class="img-wrapper"><img src="https://eagle-elite.vamtam.com/wp-content/uploads/2024/12/gettyimages-1331595123-2048x2048-2.jpg" class="d-block w-100" alt="..."> </div>
                 <div class="card-body">
                   <h5 class="card-title">Excelente Relación Calidad–Precio</h5>
                   <i class="bi bi-star-fill text-warning pe-1"></i>
@@ -340,7 +343,7 @@
             </div>
             <div class="carousel-item">
               <div class="card">
-                <div class="img-wrapper"><img src="./images/1.webp" class="d-block w-100" alt="..."> </div>
+                <div class="img-wrapper"><img src="https://eagle-elite.vamtam.com/wp-content/uploads/2024/10/gettyimages-1404798430.jpeg" class="d-block w-100" alt="..."> </div>
                 <div class="card-body">
                   <h5 class="card-title">Atención que Marca la Diferencia</h5>
                   <i class="bi bi-star-fill text-warning pe-1"></i>
@@ -354,7 +357,7 @@
             </div>
             <div class="carousel-item">
               <div class="card">
-                <div class="img-wrapper"><img src="./images/1.webp" class="d-block w-100" alt="..."> </div>
+                <div class="img-wrapper"><img src="https://eagle-elite.vamtam.com/wp-content/uploads/2024/10/GettyImages-1487500020.jpeg" class="d-block w-100" alt="..."> </div>
                 <div class="card-body">
                   <h5 class="card-title">Más que una Tienda, una Experiencia</h5>
                   <i class="bi bi-star-fill text-warning pe-1"></i>

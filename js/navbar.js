@@ -6,7 +6,7 @@ const navbarHTML = `
     font-family: 'Oswald',sans-serif;
     font-size: x-large;
 }
-.nav-item > a > div{
+.nav-item > a > div{x
     font-size: large;
 }
 #input-busqueda
@@ -38,10 +38,10 @@ const navbarHTML = `
           <a class="nav-link" href="/">Inicio</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/about.html">About us</a>
+          <a class="nav-link" href="/pages/about.html">About us</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Calzado</a>
+          <a class="nav-link" href="/pages/calzado.html">Calzado</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">Ropa</a>
