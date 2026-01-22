@@ -1,0 +1,10 @@
+/*fuente de letra*/
+@import url('https://fonts.googleapis.com/css2?family=BBH+Bogle&family=Big+Shoulders:opsz,wght@10..72,100..900&family=Figtree:ital,wght@0,300..900;1,300..900&family=League+Spartan:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Press+Start+2P&family=VT323&family=Vend+Sans:ital,wght@0,300..700;1,300..700&display=swap');
+
+:root{ /*Identidad visual*/
+--color1-blanco: #FFFFFF;
+--color2-vobscuro: #184031;
+--color3-vpasto: #5A7302;
+--color4-vclaro: #C5F280;
+}
+
