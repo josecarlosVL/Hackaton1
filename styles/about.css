@@ -58,7 +58,6 @@ p{
   padding: 50px;
   width: 60%;
 }
-
 article.mision {
   display: flex;
   gap: 20px;           
@@ -67,6 +66,7 @@ article.mision {
 article.mision p {
   flex: 1;           
 }
+
 .valores {
     display: flex;
   align-items: center; 
@@ -84,10 +84,11 @@ article.mision p {
   width: 60%;
 }
 
-.instaciones {
-  
-  align-items: center;
+.centro {
+  text-align: center;
+  margin: 40px
 }
+
 
 /* Footer */
 footer {

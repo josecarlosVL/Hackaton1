@@ -234,7 +234,7 @@
 
 
 .parent {
-    display: grid;        /
+    display: grid;        
     grid-template-columns: 2fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     gap: 16px;
@@ -253,11 +253,16 @@
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    padding: 40px 30px;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
+.div1{
+  padding:60px 0px 350px 60px;
+}
+.div2,.div3
+
+
 
 .div1::before,
 .div2::before,
@@ -309,7 +314,7 @@
     line-height: 1.5;
 }
 
-.btn {
+#Buttongrid {
     background: #caff33;
     color: #184031;
     border: none;
@@ -321,8 +326,8 @@
     transition: background 0.3s ease;
 }
 
-.btn:hover {
-    background: #b6e600;
+#Buttongrid:hover {
+    background: #b6e600 !important;
 }
 
 .div2 {
@@ -419,6 +424,7 @@
 @media (min-width: 768px) {
   .carousel-inner {
     padding: 1em;
+    height: 530px;
   }
   .carousel-control-prev,
   .carousel-control-next {
