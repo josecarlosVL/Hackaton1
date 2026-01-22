@@ -8,8 +8,14 @@
     <!-- Llamen a Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">  
+      <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
+    rel="stylesheet"
+  /> 
     <link rel="stylesheet" href="./styles/styles.css">
-
 </head>
 
 <body>
@@ -24,55 +30,449 @@
                 aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <div class="collapse navbar-collapse ms-auto" id="navbarSupportedContent">
+                <ul class="navbar-nav mb-2 mb-lg-0 align-items-center">
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        <a class="nav-link dropdown-toggle bg-dark text-light fw-bold" href="#" role="button" data-bs-toggle="dropdown"
                             aria-expanded="false">
-                            All categories
+                            Categorías
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Categorías</a></li>
                             <li>
                                 <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </li>                            
+                            <li><a class="dropdown-item" href="#">Todas las categorías</a></li>
+                            <li><a class="dropdown-item" href="#">Ropa</a></li>
+                            <li><a class="dropdown-item" href="#">Calzado</a></li>
+                            <li><a class="dropdown-item" href="#">Accesorios</a></li>
                         </ul>
                     </li>
-                    <li class="nav-item">
-                        <input type="text" placeholder="Búsqueda" id="input-búsqueda">
+                    <div class="d-none d-lg-flex container-flex busqueda"></div>
+                        <li class="nav-item busqueda">
+                            <input class=""type="text" id="input-busqueda" placeholder="Busca un producto">
+                            <button class="bg-dark text-light fw-bold m-0 h-100"id="boton-busqueda">BUSCAR</button>
+                        </li>
+                    </div>
+                    <li class="nav-item d-none d-lg-flex flex-column align-items-center mx-3">
+                            <a href="#" class="nav-link p-0 text-center text-dark">
+                                <img src="/images/user.png" width="24px" height="24px" class="mb-1" alt="User">
+                                <div>Login/Register</div>
+                            </a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
+                    <li class="nav-item d-none d-lg-flex flex-column align-items-center mx-3">
+                        <a href="#" class="nav-link p-0 text-center text-dark">
+                            <img src="/images/carrito.png" width="24px" height="24px" class="mb-1" alt="Cart">
+                            <div>Carrito</div>
+                        </a>
                     </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-                    </li>
-                </ul>
-                <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
-                    <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
             </div>
         </div>
-    </nav>
+    </nav>   
+<!-- Fin Navbar -->
 
-    <!-- Hero -->
+<!-- Hero -->
+<div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+
+  <div class="carousel-inner">
+    <div class="carousel-item active hero-slide hero-slide-1">
+      <div class="hero-overlay d-flex flex-column justify-content-center align-items-start text-white">
+        <div class="container">
+          <h1 class="display-4 fw-bold">Todo para tu deporte</h1>
+          <p class="lead">Encuentra tenis, ropa y accesorios para llevar tu rendimiento al siguiente nivel.</p>
+          <a href="#" class="btn btn-primary btn-lg">Ver colecciones</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="carousel-item hero-slide hero-slide-2">
+      <div class="hero-overlay d-flex flex-column justify-content-center align-items-start text-white">
+        <div class="container">
+          <h1 class="display-4 fw-bold">Ofertas en running</h1>
+          <p class="lead">Descuentos especiales en calzado y outfit para corredores.</p>
+          <a href="#" class="btn btn-outline-light btn-lg">Comprar ahora</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="carousel-item hero-slide hero-slide-3">
+      <div class="hero-overlay d-flex flex-column justify-content-center align-items-start text-white">
+        <div class="container">
+          <h1 class="display-4 fw-bold">Equipos para equipo</h1>
+          <p class="lead">Balones, uniformes y accesorios para fútbol, básquet y más.</p>
+          <a href="#" class="btn btn-primary btn-lg">Ver equipos</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Anterior</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Siguiente</span>
+  </button>
+</div>
+<!-- Fin Hero -->
+
+<!-- Productos destacados -->
+<section class="featured-products py-5" id="productos">
+  <div class="container">
+    <div class="row mb-5 justify-content-center">
+      <div class="col-lg-8 text-center">
+        <h2 class="display-5 fw-bold mb-3" style="color: var(--color2-vobscuro);">Productos destacados</h2>
+        <p class="lead mb-0" style="color: var(--color2-vobscuro);">Los más vendidos en deportes esta semana</p>
+      </div>
+    </div>
+    
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+      <!-- Producto 1 -->
+      <div class="col">
+        <div class="card h-100 product-card shadow-sm border-0 overflow-hidden">
+          <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=500&q=80" 
+               class="card-img-top" alt="Tenis running">
+          <div class="card-body d-flex flex-column p-4">
+            <div class="d-flex justify-content-between align-items-start mb-2">
+              <h5 class="card-title fw-bold mb-2" style="color: var(--color2-vobscuro);">Tenis Running Pro</h5>
+              <span class="badge bg-success" style="background-color: var(--color3-vpasto) !important;">-20%</span>
+            </div>
+            <p class="card-text flex-grow-1 mb-3" style="color: #666;">Amortiguación superior para maratones.</p>
+            <div class="d-flex justify-content-between align-items-end flex-grow-1">
+              <div>
+                <del class="small text-muted">$1,299</del>
+                <div class="h4 fw-bold mb-0" style="color: var(--color3-vpasto);">$1,039</div>
+              </div>
+              <button class="btn btn-primary px-4 product-btn">Ver producto</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Producto 2 -->
+      <div class="col">
+        <div class="card h-100 product-card shadow-sm border-0 overflow-hidden">
+          <img src="https://images.unsplash.com/photo-1460353581641-37baddab0fa2?w=500&fit=crop&q=80&auto=format" 
+              class="card-img-top" alt="Botas de Trekking Summit Peak Explorer">
+          
+          <div class="card-body d-flex flex-column p-4">
+            <div class="d-flex justify-content-between align-items-start mb-2">
+              <h5 class="card-title fw-bold mb-2" style="color: var(--color2-vobscuro);">Summit Peak Explorer</h5>
+              <span class="badge text-bg-success">Todo Terreno</span>
+            </div>
+            
+            <p class="card-text flex-grow-1 mb-3" style="color: #666;">
+              Soporte reforzado y membrana impermeable para conquistar cualquier sendero con máxima seguridad.
+            </p>
+            
+            <div class="d-flex justify-content-between align-items-end flex-grow-1">
+              <div class="h4 fw-bold mb-0" style="color: var(--color3-vpasto);">$3,499</div>
+              <button class="btn btn-primary px-4 product-btn">Ver producto</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Producto 3 -->
+        <div class="col">
+          <div class="card h-100 product-card shadow-sm border-0 overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?w=500&fit=crop&q=80&auto=format"
+              class="card-img-top" alt="Sneakers Urban Pro Edición Pastel">
+            <div class="card-body d-flex flex-column p-4">
+              <div class="d-flex justify-content-between align-items-start mb-2">
+                <h5 class="card-title fw-bold mb-2" style="color: var(--color2-vobscuro);">Sneakers Urban Pro</h5>
+                <span class="badge text-bg-warning">Nuevo</span>
+              </div>
+              <p class="card-text flex-grow-1 mb-3" style="color: #666;">
+                Edición especial con amortiguación reactiva y diseño ergonómico.
+              </p>
+              <div class="d-flex justify-content-between align-items-end flex-grow-1">
+                <div class="h4 fw-bold mb-0" style="color: var(--color3-vpasto);">$1,899</div>
+                <button class="btn btn-primary px-4 product-btn">Ver producto</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Producto 4 -->
+          <div class="col">
+            <div class="card h-100 product-card shadow-sm border-0 overflow-hidden">
+              <img src="https://images.unsplash.com/photo-1511886929837-354d827aae26?w=500&fit=crop&q=80&auto=format" 
+                  class="card-img-top" alt="Botas de Fútbol SpeedStrike FG">
+              <div class="card-body d-flex flex-column p-4">
+                <div class="d-flex justify-content-between align-items-start mb-2">
+                  <h5 class="card-title fw-bold mb-2" style="color: var(--color2-vobscuro);">SpeedStrike FG</h5>
+                  <span class="badge text-bg-dark">Pro</span>
+                </div>
+                <p class="card-text flex-grow-1 mb-3" style="color: #666;">
+                  Tracción explosiva y ajuste dinámico para jugadores de alto rendimiento en campo natural.
+                </p>
+                <div class="d-flex justify-content-between align-items-end flex-grow-1">
+                  <div class="h4 fw-bold mb-0" style="color: var(--color3-vpasto);">$2,599</div>
+                  <button class="btn btn-primary px-4 product-btn">Ver producto</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        <!-- Producto 5 -->
+        <div class="col">
+          <div class="card h-100 product-card shadow-sm border-0 overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1560769629-975ec94e6a86?w=500&fit=crop&q=80&auto=format" 
+                class="card-img-top" alt="Zapatillas AirFlow Performance Runner">
+            
+            <div class="card-body d-flex flex-column p-4">
+              <div class="d-flex justify-content-between align-items-start mb-2">
+                <h5 class="card-title fw-bold mb-2" style="color: var(--color2-vobscuro);">AirFlow Runner</h5>
+                <span class="badge text-bg-danger">Top Ventas</span>
+              </div>
+              
+              <p class="card-text flex-grow-1 mb-3" style="color: #666;">
+                Máximo retorno de energía y transpirabilidad premium para corredores de alto rendimiento.
+              </p>
+              
+              <div class="d-flex justify-content-between align-items-end flex-grow-1">
+                <div class="h4 fw-bold mb-0" style="color: var(--color3-vpasto);">$3,199</div>
+                <button class="btn btn-primary px-4 product-btn">Ver producto</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Producto 6 -->
+        <div class="col">
+          <div class="card h-100 product-card shadow-sm border-0 overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1549298916-b41d501d3772?w=500&fit=crop&q=80&auto=format" 
+                class="card-img-top" alt="Zapatillas de Baloncesto Courtside Elite">
+            
+            <div class="card-body d-flex flex-column p-4">
+              <div class="d-flex justify-content-between align-items-start mb-2">
+                <h5 class="card-title fw-bold mb-2" style="color: var(--color2-vobscuro);">Courtside Elite</h5>
+                <span class="badge text-bg-info text-white">Limitada</span>
+              </div>
+              
+              <p class="card-text flex-grow-1 mb-3" style="color: #666;">
+                Soporte premium y amortiguación de alto impacto para dominar la duela con estilo y seguridad.
+              </p>
+              
+              <div class="d-flex justify-content-between align-items-end flex-grow-1">
+                <div class="h4 fw-bold mb-0" style="color: var(--color3-vpasto);">$2,849</div>
+                <button class="btn btn-primary px-4 product-btn">Ver producto</button>
+              </div>
+            </div>
+          </div>
+        </div>
 
 
-    <!-- Fin Hero -->
+      <!-- Aquí se pueden agregar más -->
+       
+    </div>
+  </div>
+</section>
+<!-- Fin Productos -->
 
-    <!-- Fin Navbar -->
-
-
-
-
+ 
+    <!-- Testimoniales -->
+<div class="testimonial-slider">
+  <div id="carouselExampleControls" class="carousel carousel-dark">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="testimonial-title">
+            <i class="bi bi-quote display-1"></i>
+            <h2 class="fw-bold display-6">What our customers say</h2>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+        <div class="col-md-8">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="card">
+                <div class="img-wrapper"><img src="https://codingyaar.com/wp-content/uploads/headshot-1-scaled.jpg" class="d-block w-100" alt="..."> </div>
+                <div class="card-body">
+                  <h5 class="card-title">Card title 1</h5>
+                  <i class="bi bi-star-fill text-warning pe-1"></i>
+                  <i class="bi bi-star-fill text-warning pe-1"></i>
+                  <i class="bi bi-star-fill text-warning pe-1"></i>
+                  <i class="bi bi-star-fill text-warning pe-1"></i>
+                  <i class="bi bi-star-fill text-warning pe-1"></i>
+                  <p class="card-text">Some quick example text to build on the card title and make up
+                    the bulk of the
+                    card's content.</p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="card">
+                <div class="img-wrapper"><img src="https://codingyaar.com/wp-content/uploads/headshot-2-scaled.jpg" class="d-block w-100" alt="..."> </div>
+                <div class="card-body">
+                  <h5 class="card-title">Card title 2</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up
+                    the bulk of the
+                    card's content.</p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="card">
+                <div class="img-wrapper"><img src="https://codingyaar.com/wp-content/uploads/headshot-3-scaled.jpg" class="d-block w-100" alt="..."> </div>
+                <div class="card-body">
+                  <h5 class="card-title">Card title 3</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up
+                    the bulk of the
+                    card's content.</p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="card">
+                <div class="img-wrapper"><img src="https://codingyaar.com/wp-content/uploads/headshot-4-scaled.jpg" class="d-block w-100" alt="..."> </div>
+                <div class="card-body">
+                  <h5 class="card-title">Card title 4</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up
+                    the bulk of the
+                    card's content.</p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="card">
+                <div class="img-wrapper"><img src="https://codingyaar.com/wp-content/uploads/headshot-5-scaled.jpg" class="d-block w-100" alt="..."> </div>
+                <div class="card-body">
+                  <h5 class="card-title">Card title 5</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up
+                    the bulk of the
+                    card's content.</p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="card">
+                <div class="img-wrapper"><img src="https://codingyaar.com/wp-content/uploads/headshot-6-scaled.jpg" class="d-block w-100" alt="..."> </div>
+                <div class="card-body">
+                  <h5 class="card-title">Card title 6</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up
+                    the bulk of the
+                    card's content.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
 
     <!-- Footer -->
-    <footer class="bg-white text" ></footer>
+    <footer class="bg-black text-white pt-5">
+    <div class="container">
+        <div class="row text-center text-md-start">
+
+      <!-- LOGO -->
+      <div class="col-12 col-md-4 mb-4">
+        <h2 class="fw-bold">Zunzo</h2>
+        <p class="footer-text">
+          Welcome to our running community! Discover the joy of running, connect with fellow enthusiasts, and unlock your full potential with our expert resources and training programs.
+        </p>
+
+        <div class="social-icons d-flex justify-content-center justify-content-md-start gap-3 mt-3">
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-github"></i>
+        </div>
+      </div>
+
+      <!-- COMPAÑÍA / RECURSOS -->
+      <div class="col-12 col-md-4 mb-4">
+        <div class="row">
+          <div class="col-6">
+            <h6 class="fw-bold"><small>LINKS</small></h6>
+            <ul class="list-unstyled footer-list">
+              <li><a href="about.html">About us</a></li>
+              <li><a href="#">Our events</a></li>
+              <li><a href="#">Latest News</a></li>
+              <li><a href="#">Contact Us</a></li>
+            </ul>
+          </div>
+
+          <div class="col-6">
+            <h6 class="fw-bold"><small>PAGE</small></h6>
+            <ul class="list-unstyled footer-list">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Shop</a></li>
+              <li><a href="#">My account</a></li>
+              <li><a href="#">Wishlist</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- CONTACTO -->
+      <div class="col-12 col-md-4 mb-4 text-center text-md-end">
+
+        <div class="d-flex justify-content-center justify-content-md-end align-items-center mb-3 me-2">
+          <div>
+            <small>Need help?</small><br>
+            555-555-5555
+          </div>
+          <span class="material-symbols-outlined ms-2">phone</span>
+        </div>
+
+        
+
+        <div class="d-flex justify-content-center justify-content-md-end gap-3 mt-3">
+          <i class="fa-brands fa-cc-visa fa-2x"></i>
+          <i class="fa-brands fa-cc-mastercard fa-2x"></i>
+          <i class="fa-brands fa-paypal fa-2x"></i>
+          <i class="fa-brands fa-cc-apple-pay fa-2x"></i>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+   <!-- Barra inferior del footer -->
+<div class="footer-bottom py-3">
+  <div class="container">
+    <div class="row align-items-center text-center text-md-start">
+
+      <!-- Links legales -->
+      <div class="col-12 col-md-8 mb-2 mb-md-0">
+        <div class="d-flex flex-column flex-md-row justify-content-center justify-content-md-start gap-3 small">
+          <a href="#" class="footer-link">Home</a>
+          <a href="#" class="footer-link">My account</a>
+          <a href="#" class="footer-link">Shop</a>
+        </div>
+      </div>
+
+      <!-- Copyright -->
+      <div class="col-12 col-md-4 text-md-end">
+        <p class="small mb-0 footer-copy">
+          &copy; 2026, <strong>ZUNZO</strong> Todos los derechos reservados
+        </p>
+      </div>
+
+    </div>
+  </div>
+    </div>
+    </footer>
     <!-- Fin del footer -->
 
 
@@ -80,6 +480,12 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
             crossorigin="anonymous"></script>
+          <!-- jQuery (primero) -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+
+        <!-- Bootstrap JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.min.js"></script>
+
         <script src="js/script.js"></script>
 </body>
 

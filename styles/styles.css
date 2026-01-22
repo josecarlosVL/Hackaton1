@@ -7,4 +7,279 @@
 --color3-vpasto: #5A7302;
 --color4-vclaro: #C5F280;
 }
+/* Estilos de la navbar*/
+.nav-item{
+    height:100%;
+}
+
+#input-busqueda,
+#boton-busqueda{
+    height: 100%;
+    border: 0;
+    max-width:400px;
+}
+
+.busqueda{
+    height: 40px;
+    width: auto;
+}
+
+
+
+
+
+/* Hero carrusel */
+#heroCarousel {
+  position: relative;
+}
+.carousel-item{
+  width:100%;
+  height: 100vh;
+}
+.hero-slide {
+  height: 75vh;              /* Altura del hero */
+  min-height: 400px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* Ejemplo de imágenes de fondo (cámbialas por las que quieras) */
+.hero-slide-1 {
+  background-image: url("https://i0.wp.com/www.muscleandfitness.com/wp-content/uploads/2017/08/Female-kayaking-in-cavernous-river.jpg?quality=86&strip=all");
+  /* running / deportes generales, libre en Unsplash para uso comercial. [web:15] */
+}
+
+.hero-slide-2 {
+  background-image: url("https://res.cloudinary.com/manawa/image/upload/f_auto,c_limit,w_3840,q_auto/articles/3247/TrailRunning");
+  /* gimnasio / fitness. [web:15] */
+}
+
+.hero-slide-3 {
+  background-image: url("https://static.independent.co.uk/2021/03/29/11/29083715-7104a443-7114-495e-b100-c815cdd5010c.jpg");
+  /* fútbol / deportes de equipo. [web:15] */
+}
+
+/* Capa oscura para que se lea el texto */
+.hero-overlay {
+  width: 100%;
+  height: 100%;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  background: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0.7),
+    rgba(0, 0, 0, 0.2)
+  );
+}
+
+/* Ajuste del texto dentro del hero */
+.hero-overlay .container {
+  max-width: 600px;
+}
+
+.hero-overlay h1,
+.hero-overlay p {
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.7);
+}
+
+/* Productos destacados */
+.featured-products {
+  background-color: var(--color1-blanco);
+}
+
+.product-card {
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.product-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(24, 64, 49, 0.15) !important;
+}
+
+.product-card .card-img-top {
+  height: 250px;
+  object-fit: cover;
+}
+
+.product-btn {
+  background: var(--color3-vpasto);
+  border: none;
+  color: var(--color1-blanco);
+  font-weight: 600;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+}
+
+.product-btn:hover {
+  background: var(--color2-vobscuro);
+  transform: scale(1.05);
+  color: var(--color1-blanco);
+}
+
+/* Badge descuento con tu verde */
+.badge.bg-success {
+  background-color: var(--color3-vpasto) !important;
+  font-size: 0.75rem;
+}
+
+/* testimoniales */
+
+.testimonial-slider {
+  background-color: #5072a7;
+  padding: 2em 2em 3em;
+}
+.testimonial-title {
+  color: #fff;
+}
+.testimonial-title h2 {
+  padding-left: 0.2em;
+}
+.card {
+  margin: 0 0.5em;
+  box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
+  border: none;
+  height: 100%;
+}
+.carousel-control-prev,
+.carousel-control-next {
+  background-color: #fff;
+  width: 3em;
+  height: 3em;
+  border-radius: 50%;
+  top: 60%;
+  transform: translateY(-50%);
+}
+
+.carousel-inner {
+  overflow-x: none;
+  scroll-behavior: smooth;
+}
+
+@media (min-width: 576px) {
+  .carousel-item {
+    margin-right: 0;
+    flex: 0 0 50%;
+    display: block;
+  }
+  .carousel-inner {
+    display: flex;
+    overflow-x: none;
+  }
+}
+@media (min-width: 768px) {
+  .carousel-inner {
+    padding: 1em;
+  }
+  .carousel-control-prev,
+  .carousel-control-next {
+    opacity: 1;
+    position: absolute;
+    left: 1em;
+    top: 90%;
+    transform: translateY(-50%);
+  }
+  .carousel-control-next {
+    left: 5em;
+  }
+}
+
+
+
+/* Footer */
+footer {
+  font-size: 14px;
+}
+
+.footer-text{
+    text-align: justify;
+}
+
+footer ul li {
+  margin-bottom: 6px;
+}
+
+.footer-list a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.footer-list li {
+  position: relative;
+  cursor: pointer;
+  color: #b5b5b5;
+  transition: color 0.3s ease, padding-left 0.3s ease;
+}
+
+.footer-list li:hover {
+  color: #ffffff;
+  padding-left: 6px;
+}
+
+.social-icons i {
+  font-size: 20px;
+  cursor: pointer;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-icons i:hover {
+  transform: translateY(-4px) scale(1.1);
+  color: var(--color4-vclaro); /* color Bootstrap primary */
+}
+
+.material-symbols-outlined {
+  font-size: 26px;
+}
+
+@media (max-width: 576px) {
+  footer h2 {
+    text-align: center;
+  }
+}
+
+/* BARRA INFERIOR FOOTER */
+.footer-bottom {
+  background: linear-gradient(to right, #111, #1a1a1a);
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.footer-link {
+  color: #b5b5b5;
+  text-decoration: none;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.footer-link:hover {
+  color: #ffffff;
+}
+
+/* underline animado */
+.footer-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  width: 0;
+  height: 2px;
+  background-color: var(--color4-vclaro);
+  transition: width 0.3s ease;
+}
+
+.footer-link:hover::after {
+  width: 100%;
+}
+
+.footer-copy {
+  color: #b5b5b5;
+}
+
+
+.element-p {
+  background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(https://eagle-elite.vamtam.com/wp-content/uploads/…ment-green-grass-court-outdoors-generative-ai.jpg);
+}
 
