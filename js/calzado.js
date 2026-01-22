@@ -6,16 +6,32 @@
     <a href="#" class="btn btn-primary">Go somewhere</a>
   </div>
 </div>`*/
-renderizarProductos("contenedor-productos")
+document.addEventListener('DOMContentLoaded', () => {
+        renderizarProductos("contenedor-productos");
+    });
+async function loadData() {
+    try {
+        const response = await fetch('/json/calzado.json'); // Ubicación del JSON
+        if (!response.ok) throw new Error('Network response was not ok'); // Si por alguna razón falla
+        const data = await response.json(); //Esperar la respuesta
+        return data;  //Envia la información para trabajar con ella
+    } catch (error) {
+        console.error('There was a problem fetching the JSON:', error);//Mensaje de error
+    }
+}
 async function renderizarProductos(idContenedor) {
-    const contenedor = document.getElementById(idContenedor);
+    let contenedor = document.getElementById(idContenedor);
+    if(!contenedor){
+        console.log("No e")
+    }
+    //console.log(contenedor.innerHTML)
     
     try {
-        const respuesta = await fetch('/json/calzado.json');
-        const data = await respuesta.json();
+        
+         const data = await loadData();
         console.log(data)
         // Limpiamos el contenedor antes de renderizar
-        contenedor.innerHTML = '<h2>Prueba</h2>';
+        //contenedor.innerHTML = "<h2>Prueba</h2>";
 
         data.productos.forEach(producto => {
             const cardHTML = `
@@ -45,7 +61,7 @@ async function renderizarProductos(idContenedor) {
                 </div>
             `;
             contenedor.innerHTML += cardHTML;
-            console.log(cardHTML);
+            //console.log(cardHTML);
         });
     } catch (error) {
         console.error("Error cargando productos:", error);

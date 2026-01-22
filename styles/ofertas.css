@@ -576,3 +576,61 @@ footer ul li {
         height: 180px;
     }
 }
+
+/* ========== BOTÓN FILTROS MÓVIL ========== */
+.btn-filtros-mobile {
+    background-color: var(--color3-vpasto);
+    color: white;
+    font-weight: 700;
+    padding: 1rem;
+    border-radius: 10px;
+    border: none;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+}
+
+.btn-filtros-mobile:hover {
+    background-color: var(--color2-vobscuro);
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(24, 64, 49, 0.3);
+}
+
+/* ========== OFFCANVAS FILTROS ========== */
+.offcanvas {
+    background-color: #f8f9fa;
+}
+
+.offcanvas-title {
+    color: var(--color2-vobscuro);
+    font-weight: 800;
+}
+
+.offcanvas-body {
+    padding: 1.5rem;
+}
+
+.btn-apply-filters {
+    background-color: var(--color3-vpasto);
+    color: white;
+    font-weight: 700;
+    border: none;
+    padding: 0.75rem;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.btn-apply-filters:hover {
+    background-color: var(--color2-vobscuro);
+    color: white;
+}
+
+/* Ajustar espaciado en offcanvas */
+.offcanvas .filtro-group {
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 1rem;
+}
+
+.offcanvas .filtro-group:last-of-type {
+    border-bottom: none;
+}

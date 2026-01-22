@@ -41,7 +41,7 @@ const navbarHTML = `
           <a class="nav-link" href="/pages/calzado.html">Calzado</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Ropa</a>
+          <a class="nav-link" href="/pages/error.html">Ropa</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="/pages/ofertas.html">Ofertas</a>
