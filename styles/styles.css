@@ -7,25 +7,8 @@
 --color3-vpasto: #5A7302;
 --color4-vclaro: #C5F280;
 }
-/* Estilos de la navbar*/
-.nav-item{
-    height:100%;
-}
+/* Estilos de la navbar (Estan ya con la navbar)*/
 
-#input-busqueda,
-#boton-busqueda{
-    height: 100%;
-    border: 0;
-    max-width:400px;
-}
-#boton-busqueda:hover{
-    background-color: #5A7302;
-}
-
-.busqueda{
-    height: 40px;
-    width: auto;
-}
 /*Aquí se acaban los estilos de la navbar*/
 
 
@@ -43,7 +26,6 @@
 }
 
 .carousel-inner .carousel-item {
-  height: 75vh !important;           /* Altura fija */
   min-height: 500px;
   background-position: center !important;
   background-size: cover !important;
@@ -148,10 +130,13 @@
   #heroCarousel { height: 60vh !important; }
 }
 
-/* testimoniales */
+/*  */
 
+
+/*  */
+/* testimoniales */
 .testimonial-slider {
-  background-color: #5072a7;
+  background-color: var(--color2-vobscuro);
   padding: 2em 2em 3em;
 }
 .testimonial-title {
@@ -176,11 +161,6 @@
   transform: translateY(-50%);
 }
 
-.carousel-inner {
-  overflow-x: none;
-  scroll-behavior: smooth;
-}
-
 @media (min-width: 576px) {
   .carousel-item {
     margin-right: 0;
@@ -189,7 +169,6 @@
   }
   .carousel-inner {
     display: flex;
-    overflow-x: none;
   }
 }
 @media (min-width: 768px) {
@@ -207,6 +186,38 @@
   .carousel-control-next {
     left: 5em;
   }
+}
+
+
+/* Tarjetas de productos - imágenes simétricas */
+.product-card .card-img-top {
+  width: 100%;
+  height: 280px; /* Altura fija para todas las imágenes */
+  object-fit: cover;
+  object-position: center;
+}
+
+/* Efecto hover suave en las tarjetas */
+.product-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15) !important;
+}
+
+/* Botón de producto */
+.product-btn {
+  background-color: var(--color3-vpasto) !important;
+  border-color: var(--color3-vpasto) !important;
+  transition: all 0.3s ease;
+}
+
+.product-btn:hover {
+  background-color: var(--color2-vobscuro) !important;
+  border-color: var(--color2-vobscuro) !important;
+  transform: scale(1.05);
 }
 
 
@@ -297,13 +308,4 @@ footer ul li {
 
 .footer-copy {
   color: #b5b5b5;
-}
-
-
-.elemento-h {
-  height: 200px;
-  background-image: url(	https://eagle-elite.vamtam.com/wp-content/uploads/…ment-green-grass-court-outdoors-generative-ai.jpg);
-  background-position:center;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
