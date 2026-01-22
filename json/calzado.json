@@ -5,9 +5,9 @@
       "modelo": "Nike Air Zoom Pegasus 40",
       "precio": 129.99,
       "calificacion": 4.8,
-      "tallas": [38, 39, 40, 41, 42, 43],
+      "tallas": [38, 39, 40, 41, 42],
       "categoria": "Running",
-      "imagen": "https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&q=80&w=600",
+      "imagen": "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=600",
       "descripcion": "Amortiguación reactiva para corredores diarios."
     },
     {
@@ -15,240 +15,240 @@
       "modelo": "Adidas Ultraboost Light",
       "precio": 180.00,
       "calificacion": 4.9,
-      "tallas": [37, 38, 40, 41, 42, 45],
+      "tallas": [37, 38, 40, 41],
       "categoria": "Running",
-      "imagen": "https://images.unsplash.com/photo-1552346154-21d32810aba3?auto=format&fit=crop&q=80&w=600",
-      "descripcion": "La máxima energía en cada paso con tecnología Boost."
+      "imagen": "https://images.unsplash.com/photo-1552346154-21d32810aba3?w=600",
+      "descripcion": "Energía máxima en cada paso."
     },
     {
       "id": 3,
       "modelo": "Jordan Stay Loyal 2",
       "precio": 115.50,
       "calificacion": 4.5,
-      "tallas": [40, 41, 42, 43, 44, 45],
+      "tallas": [40, 41, 42, 43, 44],
       "categoria": "Básquetbol",
-      "imagen": "https://images.unsplash.com/photo-1597248881519-db089d3744a5?auto=format&fit=crop&q=80&w=600",
-      "descripcion": "Inspiradas en décadas de diseño Air Jordan."
+      "imagen": "https://images.unsplash.com/photo-1597248881519-db089d3744a5?w=600",
+      "descripcion": "Estilo icónico inspirado en los clásicos."
     },
     {
       "id": 4,
       "modelo": "Puma Velocity Nitro 2",
       "precio": 95.00,
       "calificacion": 4.2,
-      "tallas": [39, 40, 41, 42, 43],
+      "tallas": [39, 40, 41, 42],
       "categoria": "Training",
-      "imagen": "https://images.unsplash.com/photo-1608231387042-66d1773070a5?auto=format&fit=crop&q=80&w=600",
-      "descripcion": "Versatilidad total para el gimnasio y la ciudad."
+      "imagen": "https://images.unsplash.com/photo-1608231387042-66d1773070a5?w=600",
+      "descripcion": "Versatilidad y confort diario."
     },
     {
       "id": 5,
-      "modelo": "New Balance Fresh Foam X",
+      "modelo": "New Balance Fresh Foam",
       "precio": 165.00,
       "calificacion": 4.7,
-      "tallas": [38, 39, 40, 41, 42, 43],
+      "tallas": [38, 39, 40, 41],
       "categoria": "Running",
-      "imagen": "https://images.unsplash.com/photo-1539185441755-769473a23570?auto=format&fit=crop&q=80&w=600",
-      "descripcion": "Suavidad premium para proteger tus articulaciones."
+      "imagen": "https://images.unsplash.com/photo-1539185441755-769473a23570?w=600",
+      "descripcion": "Suavidad premium garantizada."
     },
     {
       "id": 6,
       "modelo": "Reebok Nano X3",
       "precio": 140.00,
       "calificacion": 4.6,
-      "tallas": [36, 37, 38, 39, 40],
+      "tallas": [36, 38, 40, 41],
       "categoria": "CrossFit",
-      "imagen": "https://images.unsplash.com/photo-1551107696-a4b0c5a0d9a2?auto=format&fit=crop&q=80&w=600",
-      "descripcion": "El calzado oficial del fitness de alta intensidad."
+      "imagen": "https://images.unsplash.com/photo-1551107696-a4b0c5a0d9a2?w=600",
+      "descripcion": "Estabilidad para tus WOD más duros."
     },
     {
       "id": 7,
-      "modelo": "Asics Gel-Kayano 30",
-      "precio": 160.00,
-      "calificacion": 4.8,
-      "tallas": [39, 40, 41, 42, 43],
-      "categoria": "Running",
-      "imagen": "https://images.unsplash.com/photo-1626379616459-b2ce1d9decbb?auto=format&fit=crop&q=80&w=600",
-      "descripcion": "Soporte avanzado para corredores de larga distancia."
+      "modelo": "Vans Sk8-Hi Core",
+      "precio": 85.00,
+      "calificacion": 4.9,
+      "tallas": [36, 37, 38, 39],
+      "categoria": "Skate",
+      "imagen": "https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?w=600",
+      "descripcion": "El clásico original del skate."
     },
     {
       "id": 8,
-      "modelo": "Vans Sk8-Hi Classic",
-      "precio": 85.00,
-      "calificacion": 4.9,
-      "tallas": [36, 37, 38, 39, 40],
-      "categoria": "Skateboarding",
-      "imagen": "https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?auto=format&fit=crop&q=80&w=600",
-      "descripcion": "El clásico legendario de caña alta."
-    },
-    {
-      "id": 9,
-      "modelo": "Salomon Speedcross 6",
-      "precio": 140.00,
-      "calificacion": 4.7,
-      "tallas": [40, 41, 42, 43, 44],
-      "categoria": "Senderismo",
-      "imagen": "https://images.unsplash.com/photo-1533681018184-68bd1d8f39fe?auto=format&fit=crop&q=80&w=600",
-      "descripcion": "Agarre inmejorable en terrenos técnicos y lodo."
-    },
-    {
-      "id": 10,
-      "modelo": "Nike Mercurial Vapor 15",
-      "precio": 260.00,
-      "calificacion": 4.8,
-      "tallas": [39, 40, 41, 42, 43],
-      "categoria": "Fútbol",
-      "imagen": "https://images.unsplash.com/photo-1511886929837-354d827aae26?auto=format&fit=crop&q=80&w=600",
-      "descripcion": "Diseñadas para la velocidad pura en el campo."
-    },
-    {
-      "id": 11,
-      "modelo": "Adidas Predator Accuracy",
-      "precio": 110.00,
-      "calificacion": 4.4,
-      "tallas": [38, 39, 40, 41, 42],
-      "categoria": "Fútbol",
-      "imagen": "https://images.unsplash.com/photo-1562077772-3bd30422f748?auto=format&fit=crop&q=80&w=600",
-      "descripcion": "Control total para disparos perfectos."
-    },
-    {
-      "id": 12,
-      "modelo": "Nike Air Max 270",
-      "precio": 160.00,
-      "calificacion": 4.7,
-      "tallas": [38, 39, 40, 41, 42],
-      "categoria": "Lifestyle",
-      "imagen": "https://images.unsplash.com/photo-1514989940723-e8e51635b782?auto=format&fit=crop&q=80&w=600",
-      "descripcion": "La cámara de aire más grande para el día a día."
-    },
-    {
-      "id": 13,
-      "modelo": "Converse Chuck Taylor",
-      "precio": 65.00,
-      "calificacion": 4.9,
-      "tallas": [35, 36, 37, 38, 39],
-      "categoria": "Urbano",
-      "imagen": "https://images.unsplash.com/photo-1491553895911-0055eca6402d?auto=format&fit=crop&q=80&w=600",
-      "descripcion": "La silueta más reconocida del mundo."
-    },
-    {
-      "id": 14,
-      "modelo": "Hoka Bondi 8",
-      "precio": 165.00,
-      "calificacion": 4.8,
-      "tallas": [37, 38, 39, 40, 41],
-      "categoria": "Running",
-      "imagen": "https://images.unsplash.com/photo-1582588625263-3065da41846b?auto=format&fit=crop&q=80&w=600",
-      "descripcion": "Comodidad máxima con suela sobredimensionada."
-    },
-    {
-      "id": 15,
-      "modelo": "Nike SB Dunk Low",
-      "precio": 110.00,
-      "calificacion": 4.9,
-      "tallas": [36, 37, 38, 39, 40],
-      "categoria": "Skateboarding",
-      "imagen": "https://images.unsplash.com/photo-1549298916-b41d501d3772?auto=format&fit=crop&q=80&w=600",
-      "descripcion": "Cultura y resistencia para patinar."
-    },
-    {
-      "id": 16,
-      "modelo": "Adidas Terrex Swift R3",
-      "precio": 130.00,
-      "calificacion": 4.5,
-      "tallas": [39, 40, 41, 42, 43],
-      "categoria": "Senderismo",
-      "imagen": "https://images.unsplash.com/photo-1520639889313-7313c0afb2c0?auto=format&fit=crop&q=80&w=600",
-      "descripcion": "Zapatillas ligeras para aventuras rápidas en montaña."
-    },
-    {
-      "id": 17,
-      "modelo": "Mizuno Wave Rider 27",
-      "precio": 140.00,
-      "calificacion": 4.6,
-      "tallas": [40, 41, 42, 43, 44],
-      "categoria": "Running",
-      "imagen": "https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?auto=format&fit=crop&q=80&w=600",
-      "descripcion": "Equilibrio perfecto entre amortiguación y estabilidad."
-    },
-    {
-      "id": 18,
-      "modelo": "Under Armour Curry 10",
-      "precio": 160.00,
-      "calificacion": 4.7,
-      "tallas": [40, 41, 42, 43, 44],
-      "categoria": "Básquetbol",
-      "imagen": "https://images.unsplash.com/photo-1512374382149-233c42b6a83b?auto=format&fit=crop&q=80&w=600",
-      "descripcion": "Tracción irreal para cambios de dirección explosivos."
-    },
-    {
-      "id": 19,
-      "modelo": "Puma Cali Dream",
-      "precio": 90.00,
-      "calificacion": 4.4,
-      "tallas": [35, 36, 37, 38, 39],
-      "categoria": "Lifestyle",
-      "imagen": "https://images.unsplash.com/photo-1529810313688-44ea1c2d81d3?auto=format&fit=crop&q=80&w=600",
-      "descripcion": "Estilo retro inspirado en las playas de California."
-    },
-    {
-      "id": 20,
-      "modelo": "Nike LeBron 20",
-      "precio": 200.00,
-      "calificacion": 4.8,
-      "tallas": [41, 42, 43, 44, 45],
-      "categoria": "Básquetbol",
-      "imagen": "https://images.unsplash.com/photo-1605348532760-6753d2c43329?auto=format&fit=crop&q=80&w=600",
-      "descripcion": "Potencia y protección contra impactos para atletas."
-    },
-    {
-      "id": 21,
-      "modelo": "Adidas Barricade 13",
-      "precio": 150.00,
-      "calificacion": 4.6,
-      "tallas": [40, 41, 42, 43, 44],
-      "categoria": "Tennis",
-      "imagen": "https://images.unsplash.com/photo-1628144542898-d81304d75931?auto=format&fit=crop&q=80&w=600",
-      "descripcion": "Control absoluto en la pista de tenis."
-    },
-    {
-      "id": 22,
-      "modelo": "Nike Court Vapor 11",
-      "precio": 170.00,
-      "calificacion": 4.5,
-      "tallas": [39, 40, 41, 42, 43],
-      "categoria": "Tennis",
-      "imagen": "https://images.unsplash.com/photo-1612450844448-f9b172935741?auto=format&fit=crop&q=80&w=600",
-      "descripcion": "Velocidad y agilidad lateral para el jugador moderno."
-    },
-    {
-      "id": 23,
-      "modelo": "Saucony Triumph 21",
-      "precio": 160.00,
-      "calificacion": 4.7,
-      "tallas": [38, 39, 40, 41, 42],
-      "categoria": "Running",
-      "imagen": "https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?auto=format&fit=crop&q=80&w=600",
-      "descripcion": "Amortiguación de lujo para corredores neutros."
-    },
-    {
-      "id": 24,
-      "modelo": "Brooks Ghost 15",
-      "precio": 140.00,
-      "calificacion": 4.6,
-      "tallas": [40, 41, 42, 43, 44],
-      "categoria": "Running",
-      "imagen": "https://images.unsplash.com/photo-1515341392392-8a939f400249?auto=format&fit=crop&q=80&w=600",
-      "descripcion": "Transiciones suaves y amortiguación equilibrada."
-    },
-    {
-      "id": 25,
       "modelo": "Nike Metcon 9",
       "precio": 150.00,
       "calificacion": 4.7,
-      "tallas": [38, 39, 40, 41, 42],
+      "tallas": [38, 39, 40, 41],
       "categoria": "CrossFit",
-      "imagen": "https://images.unsplash.com/photo-1614594975525-e45190c55d0b?auto=format&fit=crop&q=80&w=600",
-      "descripcion": "La placa Hyperlift más grande para una base sólida."
+      "imagen": "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=600",
+      "descripcion": "Soporte inigualable para pesas."
+    },
+    {
+      "id": 9,
+      "modelo": "Nike Air Max 270",
+      "precio": 160.00,
+      "calificacion": 4.7,
+      "tallas": [38, 39, 40, 41],
+      "categoria": "Lifestyle",
+      "imagen": "https://images.unsplash.com/photo-1514989940723-e8e51635b782?w=600",
+      "descripcion": "Comodidad urbana con aire."
+    },
+    {
+      "id": 10,
+      "modelo": "Converse Chuck Taylor",
+      "precio": 65.00,
+      "calificacion": 4.9,
+      "tallas": [35, 36, 37, 38],
+      "categoria": "Urbano",
+      "imagen": "https://images.unsplash.com/photo-1491553895911-0055eca6402d?w=600",
+      "descripcion": "El icono que nunca muere."
+    },
+    {
+      "id": 11,
+      "modelo": "Nike Mercurial Vapor",
+      "precio": 260.00,
+      "calificacion": 4.8,
+      "tallas": [39, 40, 41, 42],
+      "categoria": "Fútbol",
+      "imagen": "https://images.unsplash.com/photo-1511886929837-354d827aae26?w=600",
+      "descripcion": "Velocidad explosiva."
+    },
+    {
+      "id": 12,
+      "modelo": "Adidas Predator",
+      "precio": 110.00,
+      "calificacion": 4.4,
+      "tallas": [38, 39, 40, 41],
+      "categoria": "Fútbol",
+      "imagen": "https://images.unsplash.com/photo-1597248881519-db089d3744a5?w=600",
+      "descripcion": "Precisión con el balón."
+    },
+    {
+      "id": 13,
+      "modelo": "Salomon Speedcross",
+      "precio": 140.00,
+      "calificacion": 4.7,
+      "tallas": [40, 41, 42, 43],
+      "categoria": "Senderismo",
+      "imagen": "https://images.unsplash.com/photo-1511886929837-354d827aae26?w=600",
+      "descripcion": "Agarre total en montaña."
+    },
+    {
+      "id": 14,
+      "modelo": "Nike Court Vapor",
+      "precio": 170.00,
+      "calificacion": 4.5,
+      "tallas": [39, 40, 41, 42],
+      "categoria": "Tennis",
+      "imagen": "https://images.unsplash.com/photo-1597248881519-db089d3744a5?w=600",
+      "descripcion": "Agilidad en la cancha."
+    },
+    {
+      "id": 15,
+      "modelo": "Hoka Bondi 8",
+      "precio": 165.00,
+      "calificacion": 4.8,
+      "tallas": [37, 38, 40, 41],
+      "categoria": "Running",
+      "imagen": "https://images.unsplash.com/photo-1529810313688-44ea1c2d81d3?w=600",
+      "descripcion": "Acolchado extremo."
+    },
+    {
+      "id": 16,
+      "modelo": "Nike SB Dunk Low",
+      "precio": 110.00,
+      "calificacion": 4.9,
+      "tallas": [36, 37, 38, 39],
+      "categoria": "Skate",
+      "imagen": "https://images.unsplash.com/photo-1549298916-b41d501d3772?w=600",
+      "descripcion": "Diseño clásico para patinar."
+    },
+    {
+      "id": 17,
+      "modelo": "Puma Cali Dream",
+      "precio": 90.00,
+      "calificacion": 4.4,
+      "tallas": [35, 36, 37, 38],
+      "categoria": "Lifestyle",
+      "imagen": "https://images.unsplash.com/photo-1529810313688-44ea1c2d81d3?w=600",
+      "descripcion": "Estilo relajado diario."
+    },
+    {
+      "id": 18,
+      "modelo": "Under Armour Curry",
+      "precio": 160.00,
+      "calificacion": 4.7,
+      "tallas": [40, 41, 42, 43],
+      "categoria": "Básquetbol",
+      "imagen": "https://images.unsplash.com/photo-1512374382149-233c42b6a83b?w=600",
+      "descripcion": "Tracción inigualable."
+    },
+    {
+      "id": 19,
+      "modelo": "Adidas Terrex Swift",
+      "precio": 130.00,
+      "calificacion": 4.5,
+      "tallas": [39, 40, 41, 42],
+      "categoria": "Senderismo",
+      "imagen": "https://images.unsplash.com/photo-1549298916-b41d501d3772?w=600",
+      "descripcion": "Protección en la montaña."
+    },
+    {
+      "id": 20,
+      "modelo": "Mizuno Wave Rider",
+      "precio": 140.00,
+      "calificacion": 4.6,
+      "tallas": [40, 41, 42, 43],
+      "categoria": "Running",
+      "imagen": "https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?w=600",
+      "descripcion": "Retorno de energía."
+    },
+    {
+      "id": 21,
+      "modelo": "Nike LeBron 20",
+      "precio": 200.00,
+      "calificacion": 4.8,
+      "tallas": [41, 42, 43, 44],
+      "categoria": "Básquetbol",
+      "imagen": "https://images.unsplash.com/photo-1605348532760-6753d2c43329?w=600",
+      "descripcion": "Potencia para campeones."
+    },
+    {
+      "id": 22,
+      "modelo": "Adidas Barricade",
+      "precio": 150.00,
+      "calificacion": 4.6,
+      "tallas": [40, 41, 42, 43],
+      "categoria": "Tennis",
+      "imagen": "https://images.unsplash.com/photo-1512374382149-233c42b6a83b?w=600",
+      "descripcion": "Dominio total en pista."
+    },
+    {
+      "id": 23,
+      "modelo": "Brooks Ghost 15",
+      "precio": 140.00,
+      "calificacion": 4.6,
+      "tallas": [40, 41, 42, 43],
+      "categoria": "Running",
+      "imagen": "https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?w=600",
+      "descripcion": "Carreras suaves."
+    },
+    {
+      "id": 24,
+      "modelo": "Saucony Triumph",
+      "precio": 160.00,
+      "calificacion": 4.7,
+      "tallas": [38, 39, 40, 41],
+      "categoria": "Running",
+      "imagen": "https://images.unsplash.com/photo-1515341392392-8a939f400249?w=600",
+      "descripcion": "Amortiguación de lujo."
+    },
+    {
+      "id": 25,
+      "modelo": "Puma Suede Classic",
+      "precio": 75.00,
+      "calificacion": 4.8,
+      "tallas": [36, 37, 38, 39, 40],
+      "categoria": "Urbano",
+      "imagen": "https://images.unsplash.com/photo-1521093470119-a3ac9fbb6ae5?w=600",
+      "descripcion": "El estilo retro de siempre."
     }
   ]
 }

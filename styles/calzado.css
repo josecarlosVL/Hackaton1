@@ -16,6 +16,8 @@ body{
   font-family: 'Oswald',sans-serif;
   font-size: 20vw;
   color:white;
+width: 50%; /* Optional: ensures the text container spans the width of the image wrapper */
+height: 50%;
 }
 
 .lateral{
