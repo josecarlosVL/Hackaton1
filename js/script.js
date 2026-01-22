@@ -39,7 +39,7 @@ if (window.matchMedia("(min-width: 576px)").matches) {
       scrollPosition += cardWidth;
       $("#carouselExampleControls .carousel-inner").animate(
         { scrollLeft: scrollPosition },
-        600
+        0
       );
     }
   });
@@ -48,7 +48,7 @@ if (window.matchMedia("(min-width: 576px)").matches) {
       scrollPosition -= cardWidth;
       $("#carouselExampleControls .carousel-inner").animate(
         { scrollLeft: scrollPosition },
-        600
+        0
       );
     }
   });

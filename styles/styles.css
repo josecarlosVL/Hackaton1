@@ -18,110 +18,134 @@
     border: 0;
     max-width:400px;
 }
+#boton-busqueda:hover{
+    background-color: #5A7302;
+}
 
 .busqueda{
     height: 40px;
     width: auto;
 }
+/*Aquí se acaban los estilos de la navbar*/
 
 
 
 
 
-/* Hero carrusel */
 #heroCarousel {
+  width: 100vw !important;           /* Full viewport width */
   position: relative;
-}
-.carousel-item{
-  width:100%;
-  height: 100vh;
-}
-.hero-slide {
-  height: 75vh;              /* Altura del hero */
-  min-height: 400px;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;                /* Centra perfecto */
+  margin-bottom: 0 !important;
+  z-index: 1;
 }
 
-/* Ejemplo de imágenes de fondo (cámbialas por las que quieras) */
+.carousel-inner .carousel-item {
+  height: 75vh !important;           /* Altura fija */
+  min-height: 500px;
+  background-position: center !important;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+}
+
+/* IMÁGENES FUNCIONANDO + TUS COLORES */
 .hero-slide-1 {
-  background-image: url("https://i0.wp.com/www.muscleandfitness.com/wp-content/uploads/2017/08/Female-kayaking-in-cavernous-river.jpg?quality=86&strip=all");
-  /* running / deportes generales, libre en Unsplash para uso comercial. [web:15] */
+  background-image: linear-gradient(rgba(24,64,49,0.85), rgba(90,115,2,0.7)), 
+                    url('https://images.unsplash.com/photo-1517649763962-0c623066013b?w=1400&fit=crop&q=80&auto=format') !important;
 }
 
 .hero-slide-2 {
-  background-image: url("https://res.cloudinary.com/manawa/image/upload/f_auto,c_limit,w_3840,q_auto/articles/3247/TrailRunning");
-  /* gimnasio / fitness. [web:15] */
+  background-image: linear-gradient(rgba(24,64,49,0.8), rgba(90,115,2,0.6)), 
+                    url('https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=1400&fit=crop&q=80&auto=format') !important;
 }
 
 .hero-slide-3 {
-  background-image: url("https://static.independent.co.uk/2021/03/29/11/29083715-7104a443-7114-495e-b100-c815cdd5010c.jpg");
-  /* fútbol / deportes de equipo. [web:15] */
+  background-image: linear-gradient(rgba(24,64,49,0.85), rgba(90,115,2,0.7)), 
+                    url('https://images.unsplash.com/photo-1606890658317-7d4e69c942d3?w=1400&fit=crop&q=80&auto=format') !important;
 }
 
-/* Capa oscura para que se lea el texto */
+/* Overlay con TUS colores */
 .hero-overlay {
-  width: 100%;
-  height: 100%;
-  padding-top: 4rem;
-  padding-bottom: 4rem;
-  background: linear-gradient(
-    to right,
-    rgba(0, 0, 0, 0.7),
-    rgba(0, 0, 0, 0.2)
-  );
+  height: 100% !important;
+  width: 100% !important;
+  background: linear-gradient(135deg, 
+    rgba(24,64,49,0.9) 0%, 
+    rgba(90,115,2,0.8) 50%, 
+    rgba(197,242,128,0.4) 100%) !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: flex-start !important;
+  padding: 6rem 2rem !important;
+  color: var(--color1-blanco) !important;
 }
 
-/* Ajuste del texto dentro del hero */
 .hero-overlay .container {
+  max-width: 800px !important;
+}
+
+.hero-overlay h1 {
+  font-size: clamp(2.5rem, 5vw, 4rem) !important;
+  font-weight: 800 !important;
+  text-shadow: 0 4px 20px rgba(0,0,0,0.8) !important;
+  margin-bottom: 1.5rem !important;
+}
+
+.hero-overlay .lead {
+  font-size: clamp(1.2rem, 3vw, 1.5rem) !important;
+  text-shadow: 0 2px 10px rgba(0,0,0,0.6) !important;
+  margin-bottom: 2.5rem !important;
   max-width: 600px;
 }
 
-.hero-overlay h1,
-.hero-overlay p {
-  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.7);
+/* Botones hero */
+.hero-overlay .btn {
+  font-weight: 700 !important;
+  padding: 1.2rem 3rem !important;
+  border-radius: 50px !important;
+  text-transform: uppercase !important;
+  letter-spacing: 2px !important;
+  font-size: 1.1rem !important;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3) !important;
+  transition: all 0.3s ease !important;
 }
 
-/* Productos destacados */
-.featured-products {
-  background-color: var(--color1-blanco);
+.hero-overlay .btn-primary {
+  background: var(--color1-blanco) !important;
+  color: var(--color2-vobscuro) !important;
+  border: 3px solid var(--color1-blanco) !important;
 }
 
-.product-card {
-  transition: all 0.3s ease;
-  cursor: pointer;
+.hero-overlay .btn-primary:hover {
+  background: var(--color4-vclaro) !important;
+  transform: translateY(-3px) !important;
+  box-shadow: 0 15px 40px rgba(197,242,128,0.6) !important;
 }
 
-.product-card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 20px 40px rgba(24, 64, 49, 0.15) !important;
+.hero-overlay .btn-outline-light:hover {
+  background: var(--color1-blanco) !important;
+  color: var(--color2-vobscuro) !important;
 }
 
-.product-card .card-img-top {
-  height: 250px;
-  object-fit: cover;
+/* Controles carrusel */
+.carousel-control-prev,
+.carousel-control-next {
+  width: 5% !important;
+  opacity: 0.8 !important;
+  filter: drop-shadow(0 4px 12px rgba(0,0,0,0.5)) !important;
 }
 
-.product-btn {
-  background: var(--color3-vpasto);
-  border: none;
-  color: var(--color1-blanco);
-  font-weight: 600;
-  border-radius: 25px;
-  transition: all 0.3s ease;
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-size: 60% !important;
 }
 
-.product-btn:hover {
-  background: var(--color2-vobscuro);
-  transform: scale(1.05);
-  color: var(--color1-blanco);
-}
-
-/* Badge descuento con tu verde */
-.badge.bg-success {
-  background-color: var(--color3-vpasto) !important;
-  font-size: 0.75rem;
+/* Responsive móvil */
+@media (max-width: 768px) {
+  .hero-overlay { padding: 4rem 1.5rem !important; }
+  .carousel-item { height: 60vh !important; min-height: 400px !important; }
+  #heroCarousel { height: 60vh !important; }
 }
 
 /* testimoniales */
@@ -276,10 +300,10 @@ footer ul li {
 }
 
 
-.element-p {
-  background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-image: url(https://eagle-elite.vamtam.com/wp-content/uploads/…ment-green-grass-court-outdoors-generative-ai.jpg);
+.elemento-h {
+  height: 200px;
+  background-image: url(	https://eagle-elite.vamtam.com/wp-content/uploads/…ment-green-grass-court-outdoors-generative-ai.jpg);
+  background-position:center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-
