@@ -1,0 +1,578 @@
+/*fuente de letra*/
+@import url('https://fonts.googleapis.com/css2?family=BBH+Bogle&family=Big+Shoulders:opsz,wght@10..72,100..900&family=Figtree:ital,wght@0,300..900;1,300..900&family=League+Spartan:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Press+Start+2P&family=VT323&family=Vend+Sans:ital,wght@0,300..700;1,300..700&display=swap');
+
+:root {
+    /*Identidad visual*/
+    --color1-blanco: #FFFFFF;
+    --color2-vobscuro: #184031;
+    --color3-vpasto: #5A7302;
+    --color4-vclaro: #C5F280;
+}
+
+/* Header Ofertas */
+.ofertas-header {
+    background: linear-gradient(rgba(24, 64, 49, 0.85), rgba(90, 115, 2, 0.75)),
+        url('https://images.unsplash.com/photo-1556906781-9cba4a87e1f3?w=1600&fit=crop&q=80') center/cover;
+    height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: var(--color1-blanco);
+}
+
+.ofertas-header-content {
+    padding: 2rem;
+}
+
+.ofertas-badge {
+    display: inline-block;
+    background-color: #dc3545;
+    color: white;
+    padding: 0.5rem 1.5rem;
+    border-radius: 50px;
+    font-weight: 700;
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 1rem;
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+}
+
+.ofertas-header h1 {
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    font-weight: 800;
+    margin-bottom: 1rem;
+    text-shadow: 0 4px 15px rgba(0, 0, 0, 0.7);
+}
+
+.ofertas-header p {
+    font-size: clamp(1rem, 2vw, 1.5rem);
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.6);
+}
+
+/* Sidebar Filtros */
+.filtros-container {
+    background-color: #f8f9fa;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 100px;
+}
+
+.filtros-title {
+    color: var(--color2-vobscuro);
+    font-weight: 800;
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+}
+
+.filtro-subtitle {
+    color: var(--color3-vpasto);
+    font-weight: 700;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.filtro-group .form-check {
+    margin-bottom: 0.75rem;
+}
+
+.form-check-input:checked {
+    background-color: var(--color3-vpasto);
+    border-color: var(--color3-vpasto);
+}
+
+.form-check-label {
+    color: #666;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.form-check-label:hover {
+    color: var(--color2-vobscuro);
+}
+
+.btn-clear {
+    background-color: var(--color2-vobscuro);
+    color: white;
+    font-weight: 700;
+    border: none;
+    padding: 0.75rem;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.btn-clear:hover {
+    background-color: var(--color3-vpasto);
+    transform: translateY(-2px);
+}
+
+/* Productos Header */
+.productos-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.productos-count {
+    color: var(--color2-vobscuro);
+    font-weight: 700;
+    font-size: 1.25rem;
+}
+
+/* Tarjetas de Oferta */
+.oferta-card {
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.oferta-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+}
+
+.oferta-card .card-img-top {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    object-position: center;
+    transition: transform 0.5s ease;
+}
+
+.oferta-card:hover .card-img-top {
+    transform: scale(1.1);
+}
+
+/* Badge de Descuento */
+.oferta-badge {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background-color: #dc3545;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 50px;
+    font-weight: 800;
+    font-size: 1rem;
+    z-index: 10;
+    box-shadow: 0 4px 10px rgba(220, 53, 69, 0.4);
+}
+
+.oferta-card .card-body {
+    padding: 1.5rem;
+}
+
+.oferta-card .card-title {
+    color: var(--color2-vobscuro);
+    font-weight: 700;
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+}
+
+.oferta-card .card-text {
+    color: #666;
+    font-size: 0.95rem;
+    margin-bottom: 1rem;
+}
+
+/* Precios */
+.precio-anterior {
+    color: #999;
+    text-decoration: line-through;
+    font-size: 1rem;
+    margin-bottom: 0.25rem;
+}
+
+.precio-actual {
+    color: var(--color3-vpasto);
+    font-weight: 800;
+    font-size: 1.75rem;
+    margin-bottom: 0.75rem;
+}
+
+/* Botón de Oferta */
+.btn-oferta {
+    background-color: var(--color3-vpasto);
+    color: white;
+    font-weight: 700;
+    border: none;
+    padding: 0.75rem;
+    border-radius: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease;
+}
+
+.btn-oferta:hover {
+    background-color: var(--color2-vobscuro);
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba(24, 64, 49, 0.3);
+}
+
+/* Animación de fade para productos filtrados */
+.producto-item {
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.producto-item.hidden {
+    display: none;
+}
+
+/* Footer */
+footer {
+    font-size: 14px;
+}
+
+.footer-text {
+    text-align: justify;
+}
+
+footer ul li {
+    margin-bottom: 6px;
+}
+
+.footer-list a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.footer-list li {
+    position: relative;
+    cursor: pointer;
+    color: #b5b5b5;
+    transition: color 0.3s ease, padding-left 0.3s ease;
+}
+
+.footer-list li:hover {
+    color: #ffffff;
+    padding-left: 6px;
+}
+
+.social-icons i {
+    font-size: 20px;
+    cursor: pointer;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-icons i:hover {
+    transform: translateY(-4px) scale(1.1);
+    color: var(--color4-vclaro);
+}
+
+.material-symbols-outlined {
+    font-size: 26px;
+}
+
+@media (max-width: 576px) {
+    footer h2 {
+        text-align: center;
+    }
+}
+
+/* BARRA INFERIOR FOOTER */
+.footer-bottom {
+    background: linear-gradient(to right, #111, #1a1a1a);
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.footer-link {
+    color: #b5b5b5;
+    text-decoration: none;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.footer-link:hover {
+    color: #ffffff;
+}
+
+/* underline animado */
+.footer-link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    width: 0;
+    height: 2px;
+    background-color: var(--color4-vclaro);
+    transition: width 0.3s ease;
+}
+
+.footer-link:hover::after {
+    width: 100%;
+}
+
+.footer-copy {
+    color: #b5b5b5;
+}
+
+/* ========== RESPONSIVE DESIGN ========== */
+
+/* Tablets (992px y menos) */
+@media (max-width: 992px) {
+    .filtros-container {
+        position: relative;
+        top: 0;
+        margin-bottom: 2rem;
+    }
+
+    .ofertas-header {
+        height: 300px;
+    }
+
+    .oferta-card .card-img-top {
+        height: 250px;
+    }
+
+    .productos-count {
+        font-size: 1.1rem;
+    }
+}
+
+/* Tablets pequeñas (768px y menos) */
+@media (max-width: 768px) {
+    .ofertas-header {
+        height: 250px;
+    }
+
+    .ofertas-header-content {
+        padding: 1.5rem;
+    }
+
+    .ofertas-badge {
+        font-size: 0.75rem;
+        padding: 0.4rem 1rem;
+    }
+
+    .ofertas-header h1 {
+        font-size: 2rem;
+        margin-bottom: 0.75rem;
+    }
+
+    .ofertas-header p {
+        font-size: 1rem;
+    }
+
+    .filtros-container {
+        padding: 1.5rem;
+    }
+
+    .filtros-title {
+        font-size: 1.25rem;
+        margin-bottom: 1rem;
+    }
+
+    .filtro-subtitle {
+        font-size: 0.9rem;
+    }
+
+    .oferta-card .card-img-top {
+        height: 220px;
+    }
+
+    .oferta-card .card-body {
+        padding: 1.25rem;
+    }
+
+    .oferta-card .card-title {
+        font-size: 1.1rem;
+    }
+
+    .precio-actual {
+        font-size: 1.5rem;
+    }
+
+    .oferta-badge {
+        top: 10px;
+        right: 10px;
+        padding: 0.4rem 0.8rem;
+        font-size: 0.875rem;
+    }
+}
+
+/* Móviles (576px y menos) */
+@media (max-width: 576px) {
+    .ofertas-header {
+        height: 220px;
+    }
+
+    .ofertas-header-content {
+        padding: 1rem;
+    }
+
+    .ofertas-badge {
+        font-size: 0.7rem;
+        padding: 0.3rem 0.8rem;
+        margin-bottom: 0.75rem;
+    }
+
+    .ofertas-header h1 {
+        font-size: 1.75rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .ofertas-header p {
+        font-size: 0.9rem;
+    }
+
+    /* Filtros en móvil */
+    .filtros-container {
+        padding: 1.25rem;
+        border-radius: 10px;
+    }
+
+    .filtros-title {
+        font-size: 1.1rem;
+        text-align: center;
+    }
+
+    .filtro-group {
+        margin-bottom: 1.25rem !important;
+    }
+
+    .filtro-subtitle {
+        font-size: 0.85rem;
+        margin-bottom: 0.75rem;
+    }
+
+    .form-check {
+        margin-bottom: 0.5rem !important;
+    }
+
+    .form-check-label {
+        font-size: 0.9rem;
+    }
+
+    .btn-clear {
+        padding: 0.65rem;
+        font-size: 0.9rem;
+    }
+
+    /* Productos en móvil */
+    .productos-header {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 1.5rem !important;
+    }
+
+    .productos-count {
+        font-size: 1rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .oferta-card {
+        margin-bottom: 1rem;
+    }
+
+    .oferta-card .card-img-top {
+        height: 200px;
+    }
+
+    .oferta-card .card-body {
+        padding: 1rem;
+    }
+
+    .oferta-card .card-title {
+        font-size: 1rem;
+        margin-bottom: 0.4rem;
+    }
+
+    .oferta-card .card-text {
+        font-size: 0.875rem;
+        margin-bottom: 0.75rem;
+    }
+
+    .precio-anterior {
+        font-size: 0.9rem;
+    }
+
+    .precio-actual {
+        font-size: 1.35rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .btn-oferta {
+        padding: 0.65rem;
+        font-size: 0.85rem;
+        letter-spacing: 0.3px;
+    }
+
+    .oferta-badge {
+        top: 8px;
+        right: 8px;
+        padding: 0.35rem 0.7rem;
+        font-size: 0.8rem;
+    }
+
+    /* Footer en móvil */
+    footer {
+        font-size: 13px;
+    }
+
+    .social-icons i {
+        font-size: 18px;
+    }
+
+    .material-symbols-outlined {
+        font-size: 22px;
+    }
+}
+
+/* Móviles muy pequeños (400px y menos) */
+@media (max-width: 400px) {
+    .ofertas-header {
+        height: 200px;
+    }
+
+    .ofertas-header h1 {
+        font-size: 1.5rem;
+    }
+
+    .ofertas-header p {
+        font-size: 0.85rem;
+    }
+
+    .oferta-card .card-img-top {
+        height: 180px;
+    }
+
+    .precio-actual {
+        font-size: 1.25rem;
+    }
+
+    .filtros-container {
+        padding: 1rem;
+    }
+
+    .btn-oferta {
+        font-size: 0.8rem;
+    }
+}
+
+/* Landscape mode en móviles */
+@media (max-width: 768px) and (orientation: landscape) {
+    .ofertas-header {
+        height: 200px;
+    }
+
+    .ofertas-header h1 {
+        font-size: 1.75rem;
+    }
+
+    .oferta-card .card-img-top {
+        height: 180px;
+    }
+}

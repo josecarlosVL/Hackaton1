@@ -1,0 +1,64 @@
+{
+  "productos": [
+    {
+      "id": 1,
+      "modelo": "Nike Air Zoom Pegasus 40",
+      "precio": 129.99,
+      "calificacion": 4.8,
+      "tallas": [38, 39, 40, 41, 42, 43, 44],
+      "categoria": "Running",
+      "imagen": "https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&q=80&w=600",
+      "descripcion": "Calzado de running de alto rendimiento con amortiguación reactiva."
+    },
+    {
+      "id": 2,
+      "modelo": "Adidas Ultraboost Light",
+      "precio": 180.00,
+      "calificacion": 4.9,
+      "tallas": [37, 38, 40, 41, 42, 45],
+      "categoria": "Running",
+      "imagen": "https://images.unsplash.com/photo-1587563871167-1ee9c731aefb?auto=format&fit=crop&q=80&w=600",
+      "descripcion": "La zapatilla de running más ligera de la línea Ultraboost."
+    },
+    {
+      "id": 3,
+      "modelo": "Jordan Stay Loyal 2",
+      "precio": 115.50,
+      "calificacion": 4.5,
+      "tallas": [40, 41, 42, 43, 44, 45, 46],
+      "categoria": "Básquetbol",
+      "imagen": "https://images.unsplash.com/photo-1597248881519-db089d3744a5?auto=format&fit=crop&q=80&w=600",
+      "descripcion": "Estilo clásico inspirado en generaciones de calzado Air Jordan."
+    },
+    {
+      "id": 4,
+      "modelo": "Puma Velocity Nitro 2",
+      "precio": 95.00,
+      "calificacion": 4.2,
+      "tallas": [39, 40, 41, 42, 43],
+      "categoria": "Training",
+      "imagen": "https://images.unsplash.com/photo-1608231387042-66d1773070a5?auto=format&fit=crop&q=80&w=600",
+      "descripcion": "Versatilidad y confort para entrenamientos diarios en el gimnasio."
+    },
+    {
+      "id": 5,
+      "modelo": "New Balance Fresh Foam X 1080",
+      "precio": 165.00,
+      "calificacion": 4.7,
+      "tallas": [38, 39, 40, 41, 42, 43, 44],
+      "categoria": "Running",
+      "imagen": "https://images.unsplash.com/photo-1539185441755-769473a23570?auto=format&fit=crop&q=80&w=600",
+      "descripcion": "Amortiguación premium para corredores que buscan máxima protección."
+    },
+    {
+      "id": 6,
+      "modelo": "Reebok Nano X3",
+      "precio": 140.00,
+      "calificacion": 4.6,
+      "tallas": [36, 37, 38, 39, 40, 41, 42],
+      "categoria": "CrossFit",
+      "imagen": "https://images.unsplash.com/photo-1551107696-a4b0c5a0d9a2?auto=format&fit=crop&q=80&w=600",
+      "descripcion": "Diseñadas para ofrecer estabilidad en levantamientos y agilidad en carreras."
+    }
+  ]
+}

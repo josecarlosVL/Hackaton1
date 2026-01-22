@@ -12,6 +12,10 @@
   left: 50%;
   transform: translate(-50%, -50%);
   font-family: 'Oswald',sans-serif;
-  font-size: xx-large;
-  color: var(--color3-vclaro);
+  font-size: 20rem;
+  color:white;
+}
+
+.lateral{
+    background-color: var(--color3-vpasto);
 }

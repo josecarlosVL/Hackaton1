@@ -32,42 +32,19 @@ document.querySelectorAll('.product-btn').forEach(btn => {
 });
 
 
+  document.addEventListener("DOMContentLoaded", function () {
+    const el = document.querySelector(
+      "#carouselExampleControls.testimonial-carousel"
+    );
 
-// testimonios
-var multipleCardCarousel = document.querySelector(
-  "#carouselExampleControls.testimonial-carousel"
-);
+    if (!el) return;
 
-if (window.matchMedia("(min-width: 576px)").matches) {
-  var carousel = new bootstrap.Carousel(multipleCardCarousel, {
-    interval: false
+    const carousel = new bootstrap.Carousel(el, {
+      interval: 5000,
+      pause: false,
+      wrap: true
+    });
+
+    carousel.cycle();
   });
-
-  var $inner = $("#carouselExampleControls.testimonial-carousel .carousel-inner");
-  var carouselWidth = $inner[0].scrollWidth;
-  var cardWidth = $("#carouselExampleControls.testimonial-carousel .carousel-item").width();
-  var scrollPosition = 0;
-
-  $("#carouselExampleControls.testimonial-carousel .carousel-control-next")
-    .on("click", function () {
-      if (scrollPosition < carouselWidth - cardWidth) {
-        scrollPosition += cardWidth;
-        $inner.animate({ scrollLeft: scrollPosition }, 0);
-      }
-    });
-
-  $("#carouselExampleControls.testimonial-carousel .carousel-control-prev")
-    .on("click", function () {
-      if (scrollPosition > 0) {
-        scrollPosition -= cardWidth;
-        $inner.animate({ scrollLeft: scrollPosition }, 0);
-      }
-    });
-} else {
-  $(multipleCardCarousel).addClass("slide");
-}
-
-
-
-
 

@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ofertas - Zunzo</title>
+    <!-- Fuente Oswald -->
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&display=swap" rel="stylesheet">
+    <!-- Llamen a Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/styles/ofertas.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <div id="contenedor-navbar" class="sticky-top"></div>
+    <!-- Fin Navbar -->
+
+    <!-- Header -->
+    <header class="ofertas-header">
+        <div class="ofertas-header-content">
+            <span class="ofertas-badge">¡Ofertas Limitadas!</span>
+            <h1>Descuentos increíbles</h1>
+            <p>Hasta 50% OFF en productos seleccionados</p>
+        </div>
+    </header>
+
+    <!-- Filtros y Productos -->
+    <section class="ofertas-section py-5">
+        <div class="container">
+            <div class="row">
+                
+                <!-- Sidebar de Filtros -->
+                <aside class="col-lg-3 mb-4">
+                    <div class="filtros-container">
+                        <h4 class="filtros-title">Filtrar Productos</h4>
+                        
+                        <!-- Filtro por Categoría -->
+                        <div class="filtro-group mb-4">
+                            <h6 class="filtro-subtitle">Categoría</h6>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="running" id="cat-running" data-filter="category">
+                                <label class="form-check-label" for="cat-running">Running</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="futbol" id="cat-futbol" data-filter="category">
+                                <label class="form-check-label" for="cat-futbol">Fútbol</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="basquet" id="cat-basquet" data-filter="category">
+                                <label class="form-check-label" for="cat-basquet">Baloncesto</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="outdoor" id="cat-outdoor" data-filter="category">
+                                <label class="form-check-label" for="cat-outdoor">Outdoor</label>
+                            </div>
+                        </div>
+
+                        <!-- Filtro por Descuento -->
+                        <div class="filtro-group mb-4">
+                            <h6 class="filtro-subtitle">Descuento</h6>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="50" id="desc-50" data-filter="discount">
+                                <label class="form-check-label" for="desc-50">50% OFF</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="40" id="desc-40" data-filter="discount">
+                                <label class="form-check-label" for="desc-40">40% OFF</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="30" id="desc-30" data-filter="discount">
+                                <label class="form-check-label" for="desc-30">30% OFF</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="20" id="desc-20" data-filter="discount">
+                                <label class="form-check-label" for="desc-20">20% OFF</label>
+                            </div>
+                        </div>
+
+                        <!-- Filtro por Precio -->
+                        <div class="filtro-group mb-4">
+                            <h6 class="filtro-subtitle">Rango de Precio</h6>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="1000-1500" id="price-1" data-filter="price">
+                                <label class="form-check-label" for="price-1">$1,000 - $1,500</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="1500-2000" id="price-2" data-filter="price">
+                                <label class="form-check-label" for="price-2">$1,500 - $2,000</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="2000-3000" id="price-3" data-filter="price">
+                                <label class="form-check-label" for="price-3">$2,000 - $3,000</label>
+                            </div>
+                        </div>
+
+                        <button class="btn btn-clear w-100" id="clearFilters">Limpiar Filtros</button>
+                    </div>
+                </aside>
+
+                <!-- Grid de Productos -->
+                <div class="col-lg-9">
+                    <div class="productos-header mb-4">
+                        <h3 class="productos-count" id="productCount">Mostrando 12 productos</h3>
+                    </div>
+
+                    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4" id="productosGrid">
+                        
+                        <!-- Producto 1 -->
+                        <div class="col producto-item" data-category="running" data-discount="50" data-price="1175">
+                            <div class="card h-100 oferta-card">
+                                <div class="oferta-badge">-50%</div>
+                                <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=500&fit=crop&q=80" 
+                                     class="card-img-top" alt="Zapatillas Running">
+                                <div class="card-body d-flex flex-column">
+                                    <h5 class="card-title">SwiftRun Pro Z-1</h5>
+                                    <p class="card-text">Zapatillas de running ultra ligeras</p>
+                                    <div class="mt-auto">
+                                        <div class="precio-anterior">$2,350</div>
+                                        <div class="precio-actual">$1,175</div>
+                                        <button class="btn btn-oferta w-100 mt-2">Agregar al carrito</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Producto 2 -->
+                        <div class="col producto-item" data-category="futbol" data-discount="40" data-price="1559">
+                            <div class="card h-100 oferta-card">
+                                <div class="oferta-badge">-40%</div>
+                                <img src="https://images.unsplash.com/photo-1511886929837-354d827aae26?w=500&fit=crop&q=80" 
+                                     class="card-img-top" alt="Botas de Fútbol">
+                                <div class="card-body d-flex flex-column">
+                                    <h5 class="card-title">SpeedStrike FG</h5>
+                                    <p class="card-text">Botas profesionales para campo natural</p>
+                                    <div class="mt-auto">
+                                        <div class="precio-anterior">$2,599</div>
+                                        <div class="precio-actual">$1,559</div>
+                                        <button class="btn btn-oferta w-100 mt-2">Agregar al carrito</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Producto 3 -->
+                        <div class="col producto-item" data-category="basquet" data-discount="30" data-price="1994">
+                            <div class="card h-100 oferta-card">
+                                <div class="oferta-badge">-30%</div>
+                                <img src="https://images.unsplash.com/photo-1549298916-b41d501d3772?w=500&fit=crop&q=80" 
+                                     class="card-img-top" alt="Zapatillas Baloncesto">
+                                <div class="card-body d-flex flex-column">
+                                    <h5 class="card-title">Courtside Elite</h5>
+                                    <p class="card-text">Soporte premium para la duela</p>
+                                    <div class="mt-auto">
+                                        <div class="precio-anterior">$2,849</div>
+                                        <div class="precio-actual">$1,994</div>
+                                        <button class="btn btn-oferta w-100 mt-2">Agregar al carrito</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Producto 4 -->
+                        <div class="col producto-item" data-category="outdoor" data-discount="20" data-price="2799">
+                            <div class="card h-100 oferta-card">
+                                <div class="oferta-badge">-20%</div>
+                                <img src="https://images.unsplash.com/photo-1460353581641-37baddab0fa2?w=500&fit=crop&q=80" 
+                                     class="card-img-top" alt="Botas Trekking">
+                                <div class="card-body d-flex flex-column">
+                                    <h5 class="card-title">Summit Peak Explorer</h5>
+                                    <p class="card-text">Botas impermeables para montaña</p>
+                                    <div class="mt-auto">
+                                        <div class="precio-anterior">$3,499</div>
+                                        <div class="precio-actual">$2,799</div>
+                                        <button class="btn btn-oferta w-100 mt-2">Agregar al carrito</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Producto 5 -->
+                        <div class="col producto-item" data-category="running" data-discount="30" data-price="1329">
+                            <div class="card h-100 oferta-card">
+                                <div class="oferta-badge">-30%</div>
+                                <img src="https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?w=500&fit=crop&q=80" 
+                                     class="card-img-top" alt="Sneakers Urban">
+                                <div class="card-body d-flex flex-column">
+                                    <h5 class="card-title">Sneakers Urban Pro</h5>
+                                    <p class="card-text">Amortiguación reactiva premium</p>
+                                    <div class="mt-auto">
+                                        <div class="precio-anterior">$1,899</div>
+                                        <div class="precio-actual">$1,329</div>
+                                        <button class="btn btn-oferta w-100 mt-2">Agregar al carrito</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Producto 6 -->
+                        <div class="col producto-item" data-category="running" data-discount="40" data-price="1919">
+                            <div class="card h-100 oferta-card">
+                                <div class="oferta-badge">-40%</div>
+                                <img src="https://images.unsplash.com/photo-1560769629-975ec94e6a86?w=500&fit=crop&q=80" 
+                                     class="card-img-top" alt="AirFlow Runner">
+                                <div class="card-body d-flex flex-column">
+                                    <h5 class="card-title">AirFlow Runner</h5>
+                                    <p class="card-text">Máxima transpirabilidad</p>
+                                    <div class="mt-auto">
+                                        <div class="precio-anterior">$3,199</div>
+                                        <div class="precio-actual">$1,919</div>
+                                        <button class="btn btn-oferta w-100 mt-2">Agregar al carrito</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Producto 7 -->
+                        <div class="col producto-item" data-category="futbol" data-discount="50" data-price="1249">
+                            <div class="card h-100 oferta-card">
+                                <div class="oferta-badge">-50%</div>
+                                <img src="https://images.unsplash.com/photo-1579952363873-27f3bade9f55?w=500&fit=crop&q=80" 
+                                     class="card-img-top" alt="Botas Fútbol">
+                                <div class="card-body d-flex flex-column">
+                                    <h5 class="card-title">Thunder Strike AG</h5>
+                                    <p class="card-text">Para césped artificial</p>
+                                    <div class="mt-auto">
+                                        <div class="precio-anterior">$2,499</div>
+                                        <div class="precio-actual">$1,249</div>
+                                        <button class="btn btn-oferta w-100 mt-2">Agregar al carrito</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Producto 8 -->
+                        <div class="col producto-item" data-category="basquet" data-discount="20" data-price="2239">
+                            <div class="card h-100 oferta-card">
+                                <div class="oferta-badge">-20%</div>
+                                <img src="https://images.unsplash.com/photo-1608231387042-66d1773070a5?w=500&fit=crop&q=80" 
+                                     class="card-img-top" alt="Zapatillas Basket">
+                                <div class="card-body d-flex flex-column">
+                                    <h5 class="card-title">Hoops Legend Pro</h5>
+                                    <p class="card-text">Tecnología de alto impacto</p>
+                                    <div class="mt-auto">
+                                        <div class="precio-anterior">$2,799</div>
+                                        <div class="precio-actual">$2,239</div>
+                                        <button class="btn btn-oferta w-100 mt-2">Agregar al carrito</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Producto 9 -->
+                        <div class="col producto-item" data-category="outdoor" data-discount="30" data-price="2449">
+                            <div class="card h-100 oferta-card">
+                                <div class="oferta-badge">-30%</div>
+                                <img src="https://images.unsplash.com/photo-1520639888713-7851133b1ed0?w=500&fit=crop&q=80" 
+                                     class="card-img-top" alt="Botas Montaña">
+                                <div class="card-body d-flex flex-column">
+                                    <h5 class="card-title">Alpine Trek Max</h5>
+                                    <p class="card-text">Resistencia extrema</p>
+                                    <div class="mt-auto">
+                                        <div class="precio-anterior">$3,499</div>
+                                        <div class="precio-actual">$2,449</div>
+                                        <button class="btn btn-oferta w-100 mt-2">Agregar al carrito</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Producto 10 -->
+                        <div class="col producto-item" data-category="running" data-discount="20" data-price="1599">
+                            <div class="card h-100 oferta-card">
+                                <div class="oferta-badge">-20%</div>
+                                <img src="https://images.unsplash.com/photo-1551107696-a4b0c5a0d9a2?w=500&fit=crop&q=80" 
+                                     class="card-img-top" alt="Running Shoes">
+                                <div class="card-body d-flex flex-column">
+                                    <h5 class="card-title">Velocity Racer</h5>
+                                    <p class="card-text">Velocidad y confort</p>
+                                    <div class="mt-auto">
+                                        <div class="precio-anterior">$1,999</div>
+                                        <div class="precio-actual">$1,599</div>
+                                        <button class="btn btn-oferta w-100 mt-2">Agregar al carrito</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Producto 11 -->
+                        <div class="col producto-item" data-category="futbol" data-discount="30" data-price="1889">
+                            <div class="card h-100 oferta-card">
+                                <div class="oferta-badge">-30%</div>
+                                <img src="https://images.unsplash.com/photo-1576566588028-4147f3842f27?w=500&fit=crop&q=80" 
+                                     class="card-img-top" alt="Soccer Boots">
+                                <div class="card-body d-flex flex-column">
+                                    <h5 class="card-title">Goal Master Elite</h5>
+                                    <p class="card-text">Control total del balón</p>
+                                    <div class="mt-auto">
+                                        <div class="precio-anterior">$2,699</div>
+                                        <div class="precio-actual">$1,889</div>
+                                        <button class="btn btn-oferta w-100 mt-2">Agregar al carrito</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Producto 12 -->
+                        <div class="col producto-item" data-category="basquet" data-discount="40" data-price="1679">
+                            <div class="card h-100 oferta-card">
+                                <div class="oferta-badge">-40%</div>
+                                <img src="https://images.unsplash.com/photo-1605348532760-6753d2c43329?w=500&fit=crop&q=80" 
+                                     class="card-img-top" alt="Basketball Shoes">
+                                <div class="card-body d-flex flex-column">
+                                    <h5 class="card-title">Slam Dunk Pro</h5>
+                                    <p class="card-text">Soporte tobillo reforzado</p>
+                                    <div class="mt-auto">
+                                        <div class="precio-anterior">$2,799</div>
+                                        <div class="precio-actual">$1,679</div>
+                                        <button class="btn btn-oferta w-100 mt-2">Agregar al carrito</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black text-white pt-5">
+        <div class="container">
+            <div class="row text-center text-md-start">
+
+                <!-- LOGO -->
+                <div class="col-12 col-md-4 mb-4">
+                    <h2 class="fw-bold">Zunzo</h2>
+                    <p class="footer-text">
+                        Welcome to our running community! Discover the joy of running, connect with fellow enthusiasts,
+                        and unlock your full potential with our expert resources and training programs.
+                    </p>
+
+                    <div class="social-icons d-flex justify-content-center justify-content-md-start gap-3 mt-3">
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-github"></i>
+                    </div>
+                </div>
+
+                <!-- COMPAÑÍA / RECURSOS -->
+                <div class="col-12 col-md-4 mb-4">
+                    <div class="row">
+                        <div class="col-6">
+                            <h6 class="fw-bold"><small>LINKS</small></h6>
+                            <ul class="list-unstyled footer-list">
+                                <li><a href="about.html">About us</a></li>
+                                <li><a href="#">Our events</a></li>
+                                <li><a href="#">Latest News</a></li>
+                                <li><a href="#">Contact Us</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="col-6">
+                            <h6 class="fw-bold"><small>PAGE</small></h6>
+                            <ul class="list-unstyled footer-list">
+                                <li><a href="/">Home</a></li>
+                                <li><a href="#">Shop</a></li>
+                                <li><a href="#">My account</a></li>
+                                <li><a href="#">Wishlist</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CONTACTO -->
+                <div class="col-12 col-md-4 mb-4 text-center text-md-end">
+                    <div class="d-flex justify-content-center justify-content-md-end align-items-center mb-3 me-2">
+                        <div>
+                            <small>Need help?</small><br>
+                            555-555-5555
+                        </div>
+                        <span class="material-symbols-outlined ms-2">phone</span>
+                    </div>
+
+                    <div class="d-flex justify-content-center justify-content-md-end gap-3 mt-3">
+                        <i class="fa-brands fa-cc-visa fa-2x"></i>
+                        <i class="fa-brands fa-cc-mastercard fa-2x"></i>
+                        <i class="fa-brands fa-paypal fa-2x"></i>
+                        <i class="fa-brands fa-cc-apple-pay fa-2x"></i>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Barra inferior del footer -->
+        <div class="footer-bottom py-3">
+            <div class="container">
+                <div class="row align-items-center text-center text-md-start">
+                    <!-- Links legales -->
+                    <div class="col-12 col-md-8 mb-2 mb-md-0">
+                        <div
+                            class="d-flex flex-column flex-md-row justify-content-center justify-content-md-start gap-3 small">
+                            <a href="/" class="footer-link">Home</a>
+                            <a href="#" class="footer-link">My account</a>
+                            <a href="#" class="footer-link">Shop</a>
+                        </div>
+                    </div>
+
+                    <!-- Copyright -->
+                    <div class="col-12 col-md-4 text-md-end">
+                        <p class="small mb-0 footer-copy">
+                            &copy; 2026, <strong>ZUNZO</strong> Todos los derechos reservados
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Fin del footer -->
+
+    <script src="/js/navbar.js"></script>
+    <script src="/js/ofertas.js"></script>
+</body>
+
+</html>

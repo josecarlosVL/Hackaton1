@@ -15,7 +15,7 @@
 
 
 
-/* ========== Hero ========== */
+/* ========== HERO ========== */
 .hero-static {
   position: relative;
   width: 100vw;
@@ -38,7 +38,7 @@
   padding: 4rem 0;
 }
 
-/* Badge "Nueva Coleccion" */
+/* Badge "Nueva Colección" */
 .hero-badge {
   display: inline-block;
   background-color: var(--color4-vclaro);
@@ -116,7 +116,7 @@
   transform: translateY(-3px);
 }
 
-/* ========== GRID DE CATEGORIAS ========== */
+/* ========== GRID DE CATEGORÍAS ========== */
 .categories-grid {
   background-color: #f8f9fa;
 }
@@ -235,13 +235,15 @@
   border: none;
   height: 100%;
 }
-.carousel-control-prev,
-.carousel-control-next {
-  background-color: #fff;
-  border-radius: 50%;
-  top: 60%;
-  transform: translateY(-50%);
+.testimonial-carousel .carousel-item {
+  transition: transform 0.8s ease-in-out;
 }
+
+/* animación suave del slide */
+.testimonial-carousel .carousel-item {
+  transition: transform 0.8s ease-in-out;
+}
+
 
 @media (min-width: 576px) {
   .carousel-item {
@@ -269,52 +271,6 @@
     left: 5em;
   }
 }
-/* ===== BOTONES TESTIMONIALES ===== */
-
-.testimonial-carousel .carousel-control-prev,
-.testimonial-carousel .carousel-control-next {
-  position: relative;            /* Bootstrap los pone absolute */
-  inset: auto;                   /* resetea left/right/top */
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-
-  width: 100px;
-  height: 60px;
-
-  background-color: #ffffff;
-  border-radius: 50%;
-  opacity: 1;
-
-  margin-top: 3rem;
-  margin-left: 0.5rem;
-
-  box-shadow: 0 4px 10px rgba(0,0,0,.2);
-}
-
-/* Quita el degradado feo de Bootstrap */
-.testimonial-carousel .carousel-control-prev::after,
-.testimonial-carousel .carousel-control-next::after {
-  display: none;
-}
-
-/* Iconos */
-.testimonial-carousel .carousel-control-prev-icon,
-.testimonial-carousel .carousel-control-next-icon {
-  filter: invert(1) grayscale(1); /* flechas oscuras */
-  width: 1rem;
-  height: 1rem;
-}
-
-/* Hover */
-.testimonial-carousel .carousel-control-prev:hover,
-.testimonial-carousel .carousel-control-next:hover {
-  background-color: var(--color4-vclaro);
-}
-
-
-
-
 
 
 

@@ -17,21 +17,24 @@
   color: var(--color1-blanco);
 }
 
-header.p {
-  font-size: 18px;
-}
 
 
 h2 {
   color: var(--color3-vpasto);
 }
 
+h4 {
+  color: var(--color2-vobscuro);
+}
 
 
 
 /* Footer */
 footer {
   font-size: 14px;
+}
+footer:h2 {
+  color: var(--color1-blanco);
 }
 
 .footer-text{
