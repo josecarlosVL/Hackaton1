@@ -89,6 +89,51 @@ article.mision p {
   margin: 40px
 }
 
+li {
+  list-style: none;
+}
+
+/* ---------------- RESPONSIVE ---------------- */
+@media (max-width: 900px) {
+  .historia, 
+  .valores {
+    flex-direction: column;   
+    margin: 20px;
+    text-align: center;
+  }
+
+  .historia img,
+  .valores img {
+    max-width: 100%;          
+    height: auto;             
+    display: block;
+    margin: 0 auto;           
+  }
+
+  .historia-texto,
+  .valores-texto {
+    width: 100%;              
+    padding: 20px;
+    word-wrap: break-word;    
+    overflow-wrap: break-word;
+  }
+
+  article.mision {
+    flex-direction: column;   
+  }
+
+  article.mision p {
+    width: 100%;
+  }
+
+  .nootros-c {
+    padding: 20px;
+  }
+
+  .valores-texto {
+    text-align: center;
+  }
+}
 
 /* Footer */
 footer {

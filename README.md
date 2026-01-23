@@ -6,12 +6,12 @@ Zunzo es una plataforma moderna de comercio electrónico enfocada en calzado dep
 
 ## 👥 Integrantes del Proyecto
 
-1. **José Carlos Velasco López** - *Líder de Proyecto* (Gestión y GitHub)
-2. **Nombre Apellido** - *Arquitecto Frontend* (Módulos JS y Lógica)
-3. **Nombre Apellido** - *Diseñador UI/UX* (Bootstrap y Estilos CSS)
-4. **Nombre Apellido** - *Data Manager* (Gestión de JSON e Imágenes)
-5. **Nombre Apellido** - *Dev de Componentes* (Estructura de Cards)
-6. **Nombre Apellido** - *QA Engineer* (Pruebas y Responsivida)
+1. **José Carlos Velasco López** 
+2. **Sergio Acevedo** 
+3. **Damara Martínez** 
+4. **Karla Iturbe** 
+5. **Angel Papaqui** 
+6. **Hector Magdaleno** 
 
 ---
 
@@ -38,4 +38,4 @@ Zunzo es una plataforma moderna de comercio electrónico enfocada en calzado dep
 
 1. **Clona el repositorio:**
    ```bash
-   git clone [https://github.com/tu-usuario/zunzo-tienda.git](https://github.com/tu-usuario/zunzo-tienda.git)
+   git clone [https://github.com/josecarlosVL/Hackaton1.git]
