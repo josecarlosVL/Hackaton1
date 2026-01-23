@@ -1,6 +1,12 @@
 # 👟 Zunzo - Tienda de Calzado Deportivo
 
-Zunzo es una plataforma moderna de comercio electrónico enfocada en calzado deportivo, construida con una arquitectura de módulos en JavaScript y estilizada con Bootstrap 5.
+Zunzo es una plataforma moderna de comercio electrónico enfocada en ropa deportiva. Zunzo representa energía, movimiento e innovación. Es un nombre creado para transmitir dinamismo y modernidad, alineándose con una marca que busca ofrecer una experiencia ágil, visualmente atractiva y centrada en el usuario. La identidad transmite que Zunzo es más que una tienda: es una comunidad deportiva confiable y vibrante. Cada elemento visual refuerza la idea de rendimiento máximo y pertenencia. El sitio web está diseñado para ofrecer una experiencia clara, atractiva y orientada al usuario, enfocada en personas interesadas en equipamiento deportivo de calidad. El objetivo principal es que el usuario encuentre rápidamente lo que busca (productos, ofertas, información), y que la interacción con la página sea agradable y fácil de comprender.
+La estructura visual ayuda a resaltar lo más importante (categorías de productos, ofertas destacadas y llamados a la acción) y está pensada para que el visitante:
+1. Identifique inmediatamente los productos principales.
+2. Navegue de forma intuitiva.
+3. Tome decisiones de compra fácilmente.
+4. Sienta confianza y profesionalismo en la marca.
+5. Esta intención de facilitar la usabilidad y la navegación responde a principios fundamentales del diseño web y de experiencia de usuario, donde se prioriza la claridad, jerarquía visual y accesibilidad de la información.
 
 ---
 
