@@ -38,19 +38,19 @@ const navbarHTML = `
           <a class="nav-link" href="/">Inicio</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/pages/calzado.html">Calzado</a>
+          <a class="nav-link" href="../pages/calzado.html">Calzado</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/pages/error.html">Ropa</a>
+          <a class="nav-link" href="../pages/error.html">Ropa</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/pages/ofertas.html">Ofertas</a>
+          <a class="nav-link" href="../pages/ofertas.html">Ofertas</a>
         </li>
         <li class="nav-item  d-lg-none">
           <a class="nav-link" href="#">Login/Register</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/pages/about.html">About us</a>
+          <a class="nav-link" href="../pages/about.html">About us</a>
         </li>
         <li class="nav-item  d-lg-none">
           <a class="nav-link" href="#">Carrito</a>
