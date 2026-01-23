@@ -28,7 +28,7 @@ const navbarHTML = `
 </style>
 <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
   <div class="container-fluid">
-    <a class="navbar-brand" href="/"><img src="/images/zunzo.png"></a>
+    <a class="navbar-brand" href="/"><img src="../images/zunzo.png"></a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -66,13 +66,13 @@ const navbarHTML = `
         <li class="nav-item d-none d-lg-block"></li>
         <li class="nav-item d-none d-lg-flex flex-column align-items-center mx-3">
             <a href="#" class="nav-link p-0 text-center text-dark">
-                <img src="/images/user.png" width="36px" height="36px" class="mb-1" alt="User">
+                <img src="../images/user.png" width="36px" height="36px" class="mb-1" alt="User">
                 <div>Login/Register</div>
             </a>
         </li>
         <li class="nav-item d-none d-lg-flex flex-column align-items-center mx-3">
             <a href="#" class="nav-link p-0 text-center text-dark">
-                <img src="/images/carrito.png" width="36px" height="36px" class="mb-1" alt="Cart">
+                <img src="../images/carrito.png" width="36px" height="36px" class="mb-1" alt="Cart">
                 <div>Carrito</div>
             </a>
         </li>
